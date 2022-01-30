@@ -1,0 +1,476 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+MERGED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-46:12
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-15:12
+MERGED from [:in_app_purchase_android] D:\Dev\iTorrent-Projects\itorrentsearch\build\in_app_purchase_android\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] D:\Dev\iTorrent-Projects\itorrentsearch\build\shared_preferences\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] D:\Dev\iTorrent-Projects\itorrentsearch\build\sqflite\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_keyboard_visibility] D:\Dev\iTorrent-Projects\itorrentsearch\build\flutter_keyboard_visibility\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-14:12
+MERGED from [:path_provider] D:\Dev\iTorrent-Projects\itorrentsearch\build\path_provider\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [:package_info] D:\Dev\iTorrent-Projects\itorrentsearch\build\package_info\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [:android_intent] D:\Dev\iTorrent-Projects\itorrentsearch\build\android_intent\intermediates\library_manifest\profile\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\987078bd410392caa86d613b27a8f586\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\fead7ea2e43546ae73f7f9d07ac64f5f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\b6c34301107cd06a29fdce8c3ef58e3a\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7c94d4900a191e220b5a43b6d1d21e36\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\82043d145d628bfaead23ef63e43baa9\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\953f01bd1c1ba965762327dfde85b8cc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3b6d4e69f49dd9437b35d3a35abf9539\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2fd9120a6da4df3dbabdd40f6a2d8995\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\eb26273f8f7192460456ce62b9bdf9ef\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\d9536c14ffde0b7289f12ba6def6bfa4\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\68dbf8ea01a1dbd974fc87b5753550f0\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\bc28a09d8d2212ffd5788fe6c1853326\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\fb333fb43575d8a3b51161295454427f\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\cad25976877a6ae855ef6821534f58a1\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\4e2cc8c568239479dc00623c5aef2b0a\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\0858a47c1c5d41c7ab199399e23c29a2\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5f606c30f064eed94124828de37fadc0\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7f0bace704ff8198dbf00a5496ffd475\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\15ddec56bd001fb2d4fc04a7d71346e8\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\f15d67ff15ac844b69200ea1a0376a7a\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:2:5-55
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:3:4-40:19
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-13:19
+MERGED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\987078bd410392caa86d613b27a8f586\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\987078bd410392caa86d613b27a8f586\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7c94d4900a191e220b5a43b6d1d21e36\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7c94d4900a191e220b5a43b6d1d21e36\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\953f01bd1c1ba965762327dfde85b8cc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\953f01bd1c1ba965762327dfde85b8cc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3b6d4e69f49dd9437b35d3a35abf9539\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3b6d4e69f49dd9437b35d3a35abf9539\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:12:5-22:19
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:12:5-22:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:4:9-39
+	android:icon
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:5:9-43
+activity#com.icodelife.itorrentapp.itorrentsearch.MainActivity
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:6:9-34:20
+	android:launchMode
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:8:13-43
+	android:hardwareAccelerated
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:11:13-47
+	android:windowSoftInputMode
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:12:13-55
+	android:configChanges
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:10:13-163
+	android:theme
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:9:13-47
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:7:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:17:13-20:17
+	android:resource
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:19:15-52
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:18:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:26:13-29:17
+	android:resource
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:28:15-61
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:27:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:30:13-33:29
+action#android.intent.action.MAIN
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:31:17-68
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:32:27-74
+meta-data#flutterEmbedding
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:37:9-39:33
+	android:value
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:39:13-30
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml:38:13-44
+uses-sdk
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:in_app_purchase_android] D:\Dev\iTorrent-Projects\itorrentsearch\build\in_app_purchase_android\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:in_app_purchase_android] D:\Dev\iTorrent-Projects\itorrentsearch\build\in_app_purchase_android\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] D:\Dev\iTorrent-Projects\itorrentsearch\build\shared_preferences\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] D:\Dev\iTorrent-Projects\itorrentsearch\build\shared_preferences\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] D:\Dev\iTorrent-Projects\itorrentsearch\build\sqflite\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] D:\Dev\iTorrent-Projects\itorrentsearch\build\sqflite\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_keyboard_visibility] D:\Dev\iTorrent-Projects\itorrentsearch\build\flutter_keyboard_visibility\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_keyboard_visibility] D:\Dev\iTorrent-Projects\itorrentsearch\build\flutter_keyboard_visibility\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] D:\Dev\iTorrent-Projects\itorrentsearch\build\path_provider\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] D:\Dev\iTorrent-Projects\itorrentsearch\build\path_provider\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:package_info] D:\Dev\iTorrent-Projects\itorrentsearch\build\package_info\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:package_info] D:\Dev\iTorrent-Projects\itorrentsearch\build\package_info\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:android_intent] D:\Dev\iTorrent-Projects\itorrentsearch\build\android_intent\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [:android_intent] D:\Dev\iTorrent-Projects\itorrentsearch\build\android_intent\intermediates\library_manifest\profile\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\987078bd410392caa86d613b27a8f586\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\987078bd410392caa86d613b27a8f586\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\fead7ea2e43546ae73f7f9d07ac64f5f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\fead7ea2e43546ae73f7f9d07ac64f5f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\b6c34301107cd06a29fdce8c3ef58e3a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\b6c34301107cd06a29fdce8c3ef58e3a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7c94d4900a191e220b5a43b6d1d21e36\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7c94d4900a191e220b5a43b6d1d21e36\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\82043d145d628bfaead23ef63e43baa9\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\82043d145d628bfaead23ef63e43baa9\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\953f01bd1c1ba965762327dfde85b8cc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\953f01bd1c1ba965762327dfde85b8cc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3b6d4e69f49dd9437b35d3a35abf9539\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3b6d4e69f49dd9437b35d3a35abf9539\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2fd9120a6da4df3dbabdd40f6a2d8995\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2fd9120a6da4df3dbabdd40f6a2d8995\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\eb26273f8f7192460456ce62b9bdf9ef\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\eb26273f8f7192460456ce62b9bdf9ef\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\d9536c14ffde0b7289f12ba6def6bfa4\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\d9536c14ffde0b7289f12ba6def6bfa4\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\68dbf8ea01a1dbd974fc87b5753550f0\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\68dbf8ea01a1dbd974fc87b5753550f0\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\bc28a09d8d2212ffd5788fe6c1853326\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\bc28a09d8d2212ffd5788fe6c1853326\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\fb333fb43575d8a3b51161295454427f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\fb333fb43575d8a3b51161295454427f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\cad25976877a6ae855ef6821534f58a1\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\cad25976877a6ae855ef6821534f58a1\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\4e2cc8c568239479dc00623c5aef2b0a\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\4e2cc8c568239479dc00623c5aef2b0a\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\0858a47c1c5d41c7ab199399e23c29a2\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\0858a47c1c5d41c7ab199399e23c29a2\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5f606c30f064eed94124828de37fadc0\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5f606c30f064eed94124828de37fadc0\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7f0bace704ff8198dbf00a5496ffd475\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\7f0bace704ff8198dbf00a5496ffd475\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\15ddec56bd001fb2d4fc04a7d71346e8\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\15ddec56bd001fb2d4fc04a7d71346e8\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\f15d67ff15ac844b69200ea1a0376a7a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\f15d67ff15ac844b69200ea1a0376a7a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:6:5-8:41
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml:6:5-66
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from D:\Dev\iTorrent-Projects\itorrentsearch\android\app\src\profile\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:8:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:8:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:9:22-76
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:12:9-15:72
+	android:exported
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:14:13-37
+	android:permission
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:15:13-69
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:13:13-107
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:16:9-22:19
+	android:exported
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:17:13-97
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:19:13-21:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:20:17-78
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:20:25-75
+receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:24:9-31:20
+	android:exported
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:27:13-73
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:25:13-98
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:28:13-30:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:29:17-81
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:29:25-78
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:33:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:34:13-36:85
+	android:value
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:36:17-82
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:35:17-128
+provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
+ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:39:9-43:38
+	android:authorities
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:41:13-88
+	android:exported
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:42:13-37
+	android:initOrder
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:43:13-35
+	android:name
+		ADDED from [:firebase_messaging] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_messaging\intermediates\library_manifest\profile\AndroidManifest.xml:40:13-102
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] D:\Dev\iTorrent-Projects\itorrentsearch\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:10:17-124
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] D:\Dev\iTorrent-Projects\itorrentsearch\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-74
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\5ef1cb813a322ef5161241ab71d1068b\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\2d740029059579ad8c07a8d8ea1aa46d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\6e4079963347a42bc11581607a7e9c40\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\a7019bfe75f191a3cba05e5c04624856\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\63bd66ee5f778cdf068b521e311bfeab\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\8f870469417a19676666c1ae8a42f515\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\327235cde6e8ea11f1747755a26e5eb9\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:10:22-64
+meta-data#com.google.android.play.billingclient.version
+ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:13:9-15:37
+	android:value
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:15:13-34
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:14:13-73
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:17:9-21:75
+	android:exported
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:20:13-37
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:19:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:21:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.2] C:\Users\Mithun Menon\.gradle\caches\transforms-2\files-2.1\1fee3a7c57823b583f351d262bff2454\jetified-billing-3.0.2\AndroidManifest.xml:18:13-78
