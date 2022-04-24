@@ -1,6 +1,6 @@
 # itorrentsearch
 
-Refactoring in progress
+Refactoring in process
 
 ## Getting Started
 
