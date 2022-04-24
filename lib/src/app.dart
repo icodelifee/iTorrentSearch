@@ -4,7 +4,7 @@ import 'package:one_context/one_context.dart';
 import '../di.dart';
 import '../gen/fonts.gen.dart';
 import 'config/colors.dart';
-import 'views/homepage/pages/homepage.dart';
+import 'features/homepage/pages/homepage.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
