@@ -3,15 +3,20 @@
 ///  FlutterGen
 /// *****************************************************
 
-// ignore_for_file: directives_ordering
+// ignore_for_file: directives_ordering,unnecessary_import
 
 import 'package:flutter/widgets.dart';
 
 class $AssetsIconGen {
   const $AssetsIconGen();
 
+  /// File path: assets/icon/icon.png
   AssetGenImage get icon => const AssetGenImage('assets/icon/icon.png');
+
+  /// File path: assets/icon/search.png
   AssetGenImage get search => const AssetGenImage('assets/icon/search.png');
+
+  /// File path: assets/icon/settings.png
   AssetGenImage get settings => const AssetGenImage('assets/icon/settings.png');
 }
 
