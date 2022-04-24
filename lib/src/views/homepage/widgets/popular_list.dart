@@ -9,9 +9,9 @@ import 'package:one_context/one_context.dart';
 
 import '../../../config/colors.dart';
 import '../../../data/models/remote/popular.dart';
-import '../../../shared/frosted_glass.dart';
-import '../../../shared/grid_loading_shimmer.dart';
-import '../../../shared/listview_fade.dart';
+import '../../../presentation/widgets/frosted_glass.dart';
+import '../../../presentation/widgets/grid_loading_shimmer.dart';
+import '../../../presentation/widgets/listview_fade.dart';
 import '../../../utils/extensions/to_poster_url.dart';
 import '../../popularinfopage/popular_info_page.dart';
 import '../providers/popular_provider.dart';
@@ -46,7 +46,7 @@ class _PopularListState extends ConsumerState<PopularList> {
           backgroundColor: CColors.accentColor.withOpacity(0.3),
           color: CColors.accentColor,
           onRefresh: () async {
-            ref.read(popularStateProvider.notifier).fetchPopular(refresh: true);
+            await ref.read(popularStateProvider.notifier).fetchPopular(refresh: true);
           },
           child: ListViewFadeWidget(
             child: AnimationLimiter(
@@ -68,7 +68,7 @@ class _PopularListState extends ConsumerState<PopularList> {
                     child: ScaleAnimation(
                       child: FadeInAnimation(
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: const BorderRadius.all(Radius.circular(10)),
                           child: InkWell(
                             onTap: () => _navigateToPopular(data[index]),
                             child: CachedNetworkImage(

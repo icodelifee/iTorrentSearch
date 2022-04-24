@@ -3,6 +3,10 @@ include: package:fleasy/analysis_options.yaml
 analyzer:
   exclude:
     - "**/*.config.dart"
+
+dart_code_metrics:
+  exclude:
+    - "**/*.config.dart"
 #   errors:
 #     invalid_annotation_target: ignore
   

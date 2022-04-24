@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+const empty = SizedBox();
+// ignore: prefer_function_declarations_over_variables, no-empty-block
+final noop = () {};
+
 class SizedW extends SizedBox {
   const SizedW(double w, {Key? key}) : super(key: key, width: w);
 }

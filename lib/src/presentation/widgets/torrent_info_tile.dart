@@ -2,9 +2,9 @@ import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../config/colors.dart';
-import '../config/font_weight.dart';
-import '../data/models/remote/torrent.dart';
+import '../../config/colors.dart';
+import '../../config/font_weight.dart';
+import '../../data/models/remote/torrent.dart';
 import 'frosted_glass.dart';
 import 'reuseables.dart';
 

@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:one_context/one_context.dart';
 
 import '../../../../gen/assets.gen.dart';
-import '../../../config/font_weight.dart';
-import '../../../shared/frosted_glass.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -45,33 +43,33 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Expanded(
-                    child: GlassContainer(
-                      border: Border.all(color: Colors.transparent),
-                      height: 56,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 18),
-                        child: Row(
-                          children: [
-                            Assets.icon.search.image(
-                              width: 22,
-                              height: 22,
-                              color: Colors.white.withOpacity(0.2),
-                            ),
-                            const SizedBox(width: 20),
-                            Text(
-                              'Search...',
-                              style: TextStyle(
-                                fontWeight: regular,
-                                fontSize: 18,
-                                color: Colors.white.withOpacity(0.2),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+                  // Expanded(
+                  //   child: GlassContainer(
+                  //     border: Border.all(color: Colors.transparent),
+                  //     height: 56,
+                  //     child: Padding(
+                  //       padding: const EdgeInsets.symmetric(horizontal: 18),
+                  //       child: Row(
+                  //         children: [
+                  //           Assets.icon.search.image(
+                  //             width: 22,
+                  //             height: 22,
+                  //             color: Colors.white.withOpacity(0.2),
+                  //           ),
+                  //           const SizedBox(width: 20),
+                  //           Text(
+                  //             'Search...',
+                  //             style: TextStyle(
+                  //               fontWeight: regular,
+                  //               fontSize: 18,
+                  //               color: Colors.white.withOpacity(0.2),
+                  //             ),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                   Padding(
                     padding: const EdgeInsets.only(left: 28, right: 8),
                     child: Assets.icon.settings.image(height: 32),

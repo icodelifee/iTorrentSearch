@@ -6,8 +6,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../config/colors.dart';
 import '../../config/font_weight.dart';
 import '../../data/models/remote/popular.dart';
-import '../../shared/frosted_glass.dart';
-import '../../shared/reuseables.dart';
+import '../../presentation/widgets/frosted_glass.dart';
+import '../../presentation/widgets/reuseables.dart';
 import 'providers/popular_info_provider.dart';
 import 'widgets/backdrop_image.dart';
 import 'widgets/media_info_widget.dart';
@@ -144,10 +144,10 @@ class _ShowTorrentButtonState extends State<_ShowTorrentButton> with TickerProvi
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+    return Container(
+      margin: const EdgeInsets.all(8.0),
       child: GlassContainer(
-        border: Border.all(color: Colors.transparent),
+        border: const Border.fromBorderSide(BorderSide(color: Colors.transparent)),
         child: MaterialButton(
           onPressed: () {
             showModalBottomSheet<PopularTorrentsList>(
@@ -160,7 +160,7 @@ class _ShowTorrentButtonState extends State<_ShowTorrentButton> with TickerProvi
           },
           height: 56,
           minWidth: double.infinity,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
           color: CColors.mainColor.withOpacity(0.3),
           child: const Text(
             'Show Torrents',

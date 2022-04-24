@@ -7,10 +7,10 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../../config/colors.dart';
 import '../../../config/font_weight.dart';
 import '../../../data/enums/search_provider.dart';
-import '../../../shared/default_progress_indicator.dart';
-import '../../../shared/empty.dart';
-import '../../../shared/listview_fade.dart';
-import '../../../shared/torrent_info_tile.dart';
+import '../../../presentation/widgets/default_progress_indicator.dart';
+import '../../../presentation/widgets/listview_fade.dart';
+import '../../../presentation/widgets/reuseables.dart';
+import '../../../presentation/widgets/torrent_info_tile.dart';
 import '../providers/search_provider.dart';
 
 class SearchList extends StatefulHookConsumerWidget {
@@ -81,9 +81,7 @@ class _SearchListState extends ConsumerState<SearchList> {
                         child: SlideAnimation(
                           verticalOffset: 50.0,
                           child: FadeInAnimation(
-                            child: TorrentInfoTile(
-                              torrent: data[provider]![index],
-                            ),
+                            child: TorrentInfoTile(torrent: data[provider]![index]),
                           ),
                         ),
                       ),

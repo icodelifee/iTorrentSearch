@@ -4,7 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../config/colors.dart';
 import '../../../config/font_weight.dart';
-import '../../../shared/frosted_glass.dart';
+import '../../../presentation/widgets/frosted_glass.dart';
 import '../providers/search_provider.dart';
 
 final searchTextProvider = StateProvider<String?>((ref) => null);
@@ -37,7 +37,7 @@ class _DummyAppBarState extends ConsumerState<DummyAppBar> {
     final searchText = ref.watch(searchTextProvider);
 
     return GlassContainer(
-      border: Border.all(color: Colors.transparent),
+      border: const Border.fromBorderSide(BorderSide(color: Colors.transparent)),
       height: 56,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 18),
