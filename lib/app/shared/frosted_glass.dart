@@ -76,7 +76,7 @@ class GlassContainer extends StatelessWidget {
     Key? key,
     this.opacity = 0.05,
     this.child,
-    this.blur = 5,
+    this.blur = 15,
     this.border,
     this.height,
     this.width,
@@ -88,30 +88,27 @@ class GlassContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomPaint(
-      painter: _PaintShadow(shadowStrength: shadowStrength),
+    return ClipRRect(
+      borderRadius: borderRadius as BorderRadius? ?? const BorderRadius.all(Radius.circular(10)),
       child: Container(
         height: height,
-        foregroundDecoration: BoxDecoration(
-          borderRadius: borderRadius ?? BorderRadius.circular(10),
-          border: border ?? Border.all(color: Colors.white.withOpacity(0.3), width: 0.3),
-        ),
         margin: margin,
         width: width,
-        child: ClipRRect(
-          borderRadius: borderRadius as BorderRadius? ?? BorderRadius.circular(10),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(
-              sigmaX: blur,
-              sigmaY: blur,
+        foregroundDecoration: BoxDecoration(
+          borderRadius: borderRadius ?? const BorderRadius.all(Radius.circular(10)),
+          border: border ?? Border.all(color: Colors.white.withOpacity(0.3), width: 0.3),
+        ),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(
+            sigmaX: blur,
+            sigmaY: blur,
+          ),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: borderRadius ?? BorderRadius.circular(10),
+              color: Colors.grey[100]!.withOpacity(opacity),
             ),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: borderRadius ?? BorderRadius.circular(10),
-                color: Colors.grey[100]!.withOpacity(opacity),
-              ),
-              child: child,
-            ),
+            child: child,
           ),
         ),
       ),

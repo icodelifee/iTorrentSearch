@@ -56,43 +56,46 @@ class _PopularInfoPageState extends ConsumerState<PopularInfoPage> {
         body: Stack(
           children: [
             PopularInfoBackdropImage(posterPath: widget.popular.posterPath),
-            ListView(
-              shrinkWrap: true,
-              children: AnimationConfiguration.toStaggeredList(
-                duration: const Duration(milliseconds: 375),
-                childAnimationBuilder: (widget) => SlideAnimation(
-                  verticalOffset: 100,
-                  curve: Curves.easeInOutCubic,
-                  child: FadeInAnimation(
+            ScrollConfiguration(
+              behavior: const ScrollBehavior().copyWith(overscroll: false),
+              child: ListView(
+                shrinkWrap: true,
+                children: AnimationConfiguration.toStaggeredList(
+                  duration: const Duration(milliseconds: 375),
+                  childAnimationBuilder: (widget) => SlideAnimation(
+                    verticalOffset: 100,
                     curve: Curves.easeInOutCubic,
-                    child: widget,
+                    child: FadeInAnimation(
+                      curve: Curves.easeInOutCubic,
+                      child: widget,
+                    ),
                   ),
+                  children: [
+                    Center(
+                      child: PopularInfoPosterImage(
+                        imageUrl: widget.popular.posterPath,
+                        placeHolder: const GlassContainer(width: 200, height: 300),
+                        width: 200,
+                      ),
+                    ),
+                    sizedH32,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 18),
+                      child: Text(
+                        widget.popular.title,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(fontSize: 24, fontWeight: semiBold),
+                      ),
+                    ),
+                    sizedH20,
+                    MediaInfoWidget(popular: widget.popular),
+                    sizedH20,
+                    RatingWidget(rating: widget.popular.voteAverage),
+                    sizedH20,
+                    OverviewWidget(overview: widget.popular.overview),
+                    const SizedBox(height: 120),
+                  ],
                 ),
-                children: [
-                  Center(
-                    child: PopularInfoPosterImage(
-                      imageUrl: widget.popular.posterPath,
-                      placeHolder: const GlassContainer(width: 200, height: 300),
-                      width: 200,
-                    ),
-                  ),
-                  sizedH32,
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 18),
-                    child: Text(
-                      widget.popular.title,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 24, fontWeight: semiBold),
-                    ),
-                  ),
-                  sizedH20,
-                  MediaInfoWidget(popular: widget.popular),
-                  sizedH20,
-                  RatingWidget(rating: widget.popular.voteAverage),
-                  sizedH20,
-                  OverviewWidget(overview: widget.popular.overview),
-                  const SizedBox(height: 120),
-                ],
               ),
             ),
             Align(
