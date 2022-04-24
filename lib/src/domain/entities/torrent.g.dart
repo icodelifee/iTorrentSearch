@@ -16,8 +16,7 @@ _$_Torrent _$$_TorrentFromJson(Map<String, dynamic> json) => _$_Torrent(
       magnet: json['magnet'] as String,
     );
 
-Map<String, dynamic> _$$_TorrentToJson(_$_Torrent instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$_TorrentToJson(_$_Torrent instance) => <String, dynamic>{
       'title': instance.title,
       'seeds': instance.seeds,
       'leechs': instance.leechs,

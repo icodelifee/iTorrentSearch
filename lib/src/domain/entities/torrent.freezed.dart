@@ -66,16 +66,8 @@ mixin _$Torrent {
 
 /// @nodoc
 abstract class $TorrentCopyWith<$Res> {
-  factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) =
-      _$TorrentCopyWithImpl<$Res>;
-  $Res call(
-      {String title,
-      String seeds,
-      String leechs,
-      String size,
-      String added,
-      String link,
-      String magnet});
+  factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) = _$TorrentCopyWithImpl<$Res>;
+  $Res call({String title, String seeds, String leechs, String size, String added, String link, String magnet});
 }
 
 /// @nodoc
@@ -131,24 +123,14 @@ class _$TorrentCopyWithImpl<$Res> implements $TorrentCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TorrentCopyWith<$Res> implements $TorrentCopyWith<$Res> {
-  factory _$TorrentCopyWith(_Torrent value, $Res Function(_Torrent) then) =
-      __$TorrentCopyWithImpl<$Res>;
+  factory _$TorrentCopyWith(_Torrent value, $Res Function(_Torrent) then) = __$TorrentCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {String title,
-      String seeds,
-      String leechs,
-      String size,
-      String added,
-      String link,
-      String magnet});
+  $Res call({String title, String seeds, String leechs, String size, String added, String link, String magnet});
 }
 
 /// @nodoc
-class __$TorrentCopyWithImpl<$Res> extends _$TorrentCopyWithImpl<$Res>
-    implements _$TorrentCopyWith<$Res> {
-  __$TorrentCopyWithImpl(_Torrent _value, $Res Function(_Torrent) _then)
-      : super(_value, (v) => _then(v as _Torrent));
+class __$TorrentCopyWithImpl<$Res> extends _$TorrentCopyWithImpl<$Res> implements _$TorrentCopyWith<$Res> {
+  __$TorrentCopyWithImpl(_Torrent _value, $Res Function(_Torrent) _then) : super(_value, (v) => _then(v as _Torrent));
 
   @override
   _Torrent get _value => super._value as _Torrent;
@@ -208,8 +190,7 @@ class _$_Torrent implements _Torrent {
       required this.link,
       required this.magnet});
 
-  factory _$_Torrent.fromJson(Map<String, dynamic> json) =>
-      _$$_TorrentFromJson(json);
+  factory _$_Torrent.fromJson(Map<String, dynamic> json) => _$$_TorrentFromJson(json);
 
   @override
   final String title;
@@ -258,8 +239,7 @@ class _$_Torrent implements _Torrent {
 
   @JsonKey(ignore: true)
   @override
-  _$TorrentCopyWith<_Torrent> get copyWith =>
-      __$TorrentCopyWithImpl<_Torrent>(this, _$identity);
+  _$TorrentCopyWith<_Torrent> get copyWith => __$TorrentCopyWithImpl<_Torrent>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -295,6 +275,5 @@ abstract class _Torrent implements Torrent {
   String get magnet;
   @override
   @JsonKey(ignore: true)
-  _$TorrentCopyWith<_Torrent> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$TorrentCopyWith<_Torrent> get copyWith => throw _privateConstructorUsedError;
 }

@@ -13,8 +13,7 @@ class GridLoadingShimmer extends StatefulWidget {
   State<GridLoadingShimmer> createState() => _GridLoadingShimmerState();
 }
 
-class _GridLoadingShimmerState extends State<GridLoadingShimmer>
-    with SingleTickerProviderStateMixin {
+class _GridLoadingShimmerState extends State<GridLoadingShimmer> with SingleTickerProviderStateMixin {
   late final pulsatingController = AnimationController(
     vsync: this,
     duration: 1.seconds,

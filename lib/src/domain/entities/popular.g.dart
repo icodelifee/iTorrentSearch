@@ -8,8 +8,7 @@ part of 'popular.dart';
 
 Popular _$PopularFromJson(Map<String, dynamic> json) => Popular(
       backdropPath: json['backdrop_path'] as String,
-      genres:
-          (json['genres'] as List<dynamic>).map((e) => e as String).toList(),
+      genres: (json['genres'] as List<dynamic>).map((e) => e as String).toList(),
       id: json['id'] as int,
       overview: json['overview'] as String,
       popularity: (json['popularity'] as num).toDouble(),
@@ -39,8 +38,7 @@ Map<String, dynamic> _$PopularToJson(Popular instance) => <String, dynamic>{
 
 _$_Popular _$$_PopularFromJson(Map<String, dynamic> json) => _$_Popular(
       backdropPath: json['backdrop_path'] as String,
-      genres:
-          (json['genres'] as List<dynamic>).map((e) => e as String).toList(),
+      genres: (json['genres'] as List<dynamic>).map((e) => e as String).toList(),
       id: json['id'] as int,
       overview: json['overview'] as String,
       popularity: (json['popularity'] as num).toDouble(),
@@ -53,8 +51,7 @@ _$_Popular _$$_PopularFromJson(Map<String, dynamic> json) => _$_Popular(
       voteAverage: (json['vote_average'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$$_PopularToJson(_$_Popular instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$_PopularToJson(_$_Popular instance) => <String, dynamic>{
       'backdrop_path': instance.backdropPath,
       'genres': instance.genres,
       'id': instance.id,

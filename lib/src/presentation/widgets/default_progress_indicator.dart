@@ -21,5 +21,3 @@ class DefaultProgressIndicator extends StatelessWidget {
     return isCenter ? const Center(child: progressIndicator) : progressIndicator;
   }
 }
-
-

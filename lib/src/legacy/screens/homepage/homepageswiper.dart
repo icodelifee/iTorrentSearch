@@ -12,7 +12,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
-    
+
 //     return FutureBuilder(
 //       future: getIt<HomePageState>().recents,
 //       builder: (BuildContext context, AsyncSnapshot<List<Hotpicks>> snapshot) {

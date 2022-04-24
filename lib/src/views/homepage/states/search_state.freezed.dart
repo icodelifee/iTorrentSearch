@@ -98,9 +98,7 @@ mixin _$SearchState {
 
 /// @nodoc
 abstract class $SearchStateCopyWith<$Res> {
-  factory $SearchStateCopyWith(
-          SearchState value, $Res Function(SearchState) then) =
-      _$SearchStateCopyWithImpl<$Res>;
+  factory $SearchStateCopyWith(SearchState value, $Res Function(SearchState) then) = _$SearchStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -114,17 +112,14 @@ class _$SearchStateCopyWithImpl<$Res> implements $SearchStateCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$SearchStateInitialCopyWith<$Res> {
-  factory _$SearchStateInitialCopyWith(
-          _SearchStateInitial value, $Res Function(_SearchStateInitial) then) =
+  factory _$SearchStateInitialCopyWith(_SearchStateInitial value, $Res Function(_SearchStateInitial) then) =
       __$SearchStateInitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$SearchStateInitialCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res>
+class __$SearchStateInitialCopyWithImpl<$Res> extends _$SearchStateCopyWithImpl<$Res>
     implements _$SearchStateInitialCopyWith<$Res> {
-  __$SearchStateInitialCopyWithImpl(
-      _SearchStateInitial _value, $Res Function(_SearchStateInitial) _then)
+  __$SearchStateInitialCopyWithImpl(_SearchStateInitial _value, $Res Function(_SearchStateInitial) _then)
       : super(_value, (v) => _then(v as _SearchStateInitial));
 
   @override
@@ -143,8 +138,7 @@ class _$_SearchStateInitial implements _SearchStateInitial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _SearchStateInitial);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _SearchStateInitial);
   }
 
   @override
@@ -231,17 +225,14 @@ abstract class _SearchStateInitial implements SearchState {
 
 /// @nodoc
 abstract class _$SearchStateLoadingCopyWith<$Res> {
-  factory _$SearchStateLoadingCopyWith(
-          _SearchStateLoading value, $Res Function(_SearchStateLoading) then) =
+  factory _$SearchStateLoadingCopyWith(_SearchStateLoading value, $Res Function(_SearchStateLoading) then) =
       __$SearchStateLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$SearchStateLoadingCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res>
+class __$SearchStateLoadingCopyWithImpl<$Res> extends _$SearchStateCopyWithImpl<$Res>
     implements _$SearchStateLoadingCopyWith<$Res> {
-  __$SearchStateLoadingCopyWithImpl(
-      _SearchStateLoading _value, $Res Function(_SearchStateLoading) _then)
+  __$SearchStateLoadingCopyWithImpl(_SearchStateLoading _value, $Res Function(_SearchStateLoading) _then)
       : super(_value, (v) => _then(v as _SearchStateLoading));
 
   @override
@@ -260,8 +251,7 @@ class _$_SearchStateLoading implements _SearchStateLoading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _SearchStateLoading);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _SearchStateLoading);
   }
 
   @override
@@ -348,18 +338,15 @@ abstract class _SearchStateLoading implements SearchState {
 
 /// @nodoc
 abstract class _$SearchStateDataCopyWith<$Res> {
-  factory _$SearchStateDataCopyWith(
-          _SearchStateData value, $Res Function(_SearchStateData) then) =
+  factory _$SearchStateDataCopyWith(_SearchStateData value, $Res Function(_SearchStateData) then) =
       __$SearchStateDataCopyWithImpl<$Res>;
   $Res call({Map<SearchProvider, List<Torrent>> data});
 }
 
 /// @nodoc
-class __$SearchStateDataCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res>
+class __$SearchStateDataCopyWithImpl<$Res> extends _$SearchStateCopyWithImpl<$Res>
     implements _$SearchStateDataCopyWith<$Res> {
-  __$SearchStateDataCopyWithImpl(
-      _SearchStateData _value, $Res Function(_SearchStateData) _then)
+  __$SearchStateDataCopyWithImpl(_SearchStateData _value, $Res Function(_SearchStateData) _then)
       : super(_value, (v) => _then(v as _SearchStateData));
 
   @override
@@ -400,8 +387,7 @@ class _$_SearchStateData implements _SearchStateData {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
@@ -484,29 +470,24 @@ class _$_SearchStateData implements _SearchStateData {
 }
 
 abstract class _SearchStateData implements SearchState {
-  const factory _SearchStateData(
-      {required Map<SearchProvider, List<Torrent>> data}) = _$_SearchStateData;
+  const factory _SearchStateData({required Map<SearchProvider, List<Torrent>> data}) = _$_SearchStateData;
 
   Map<SearchProvider, List<Torrent>> get data;
   @JsonKey(ignore: true)
-  _$SearchStateDataCopyWith<_SearchStateData> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$SearchStateDataCopyWith<_SearchStateData> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$SearchStateErrorCopyWith<$Res> {
-  factory _$SearchStateErrorCopyWith(
-          _SearchStateError value, $Res Function(_SearchStateError) then) =
+  factory _$SearchStateErrorCopyWith(_SearchStateError value, $Res Function(_SearchStateError) then) =
       __$SearchStateErrorCopyWithImpl<$Res>;
   $Res call({String? error});
 }
 
 /// @nodoc
-class __$SearchStateErrorCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res>
+class __$SearchStateErrorCopyWithImpl<$Res> extends _$SearchStateCopyWithImpl<$Res>
     implements _$SearchStateErrorCopyWith<$Res> {
-  __$SearchStateErrorCopyWithImpl(
-      _SearchStateError _value, $Res Function(_SearchStateError) _then)
+  __$SearchStateErrorCopyWithImpl(_SearchStateError _value, $Res Function(_SearchStateError) _then)
       : super(_value, (v) => _then(v as _SearchStateError));
 
   @override
@@ -547,8 +528,7 @@ class _$_SearchStateError implements _SearchStateError {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
@@ -635,6 +615,5 @@ abstract class _SearchStateError implements SearchState {
 
   String? get error;
   @JsonKey(ignore: true)
-  _$SearchStateErrorCopyWith<_SearchStateError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$SearchStateErrorCopyWith<_SearchStateError> get copyWith => throw _privateConstructorUsedError;
 }

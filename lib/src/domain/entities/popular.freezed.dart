@@ -86,8 +86,7 @@ mixin _$Popular {
 
 /// @nodoc
 abstract class $PopularCopyWith<$Res> {
-  factory $PopularCopyWith(Popular value, $Res Function(Popular) then) =
-      _$PopularCopyWithImpl<$Res>;
+  factory $PopularCopyWith(Popular value, $Res Function(Popular) then) = _$PopularCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'backdrop_path') String backdropPath,
       List<String> genres,
@@ -181,8 +180,7 @@ class _$PopularCopyWithImpl<$Res> implements $PopularCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$PopularCopyWith<$Res> implements $PopularCopyWith<$Res> {
-  factory _$PopularCopyWith(_Popular value, $Res Function(_Popular) then) =
-      __$PopularCopyWithImpl<$Res>;
+  factory _$PopularCopyWith(_Popular value, $Res Function(_Popular) then) = __$PopularCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'backdrop_path') String backdropPath,
@@ -200,10 +198,8 @@ abstract class _$PopularCopyWith<$Res> implements $PopularCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$PopularCopyWithImpl<$Res> extends _$PopularCopyWithImpl<$Res>
-    implements _$PopularCopyWith<$Res> {
-  __$PopularCopyWithImpl(_Popular _value, $Res Function(_Popular) _then)
-      : super(_value, (v) => _then(v as _Popular));
+class __$PopularCopyWithImpl<$Res> extends _$PopularCopyWithImpl<$Res> implements _$PopularCopyWith<$Res> {
+  __$PopularCopyWithImpl(_Popular _value, $Res Function(_Popular) _then) : super(_value, (v) => _then(v as _Popular));
 
   @override
   _Popular get _value => super._value as _Popular;
@@ -293,8 +289,7 @@ class _$_Popular implements _Popular {
       @JsonKey(name: 'imdb_id') required this.imdbId,
       @JsonKey(name: 'vote_average') required this.voteAverage});
 
-  factory _$_Popular.fromJson(Map<String, dynamic> json) =>
-      _$$_PopularFromJson(json);
+  factory _$_Popular.fromJson(Map<String, dynamic> json) => _$$_PopularFromJson(json);
 
   @override
   @JsonKey(name: 'backdrop_path')
@@ -336,23 +331,18 @@ class _$_Popular implements _Popular {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Popular &&
-            const DeepCollectionEquality()
-                .equals(other.backdropPath, backdropPath) &&
+            const DeepCollectionEquality().equals(other.backdropPath, backdropPath) &&
             const DeepCollectionEquality().equals(other.genres, genres) &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality()
-                .equals(other.popularity, popularity) &&
-            const DeepCollectionEquality()
-                .equals(other.posterPath, posterPath) &&
-            const DeepCollectionEquality()
-                .equals(other.releaseDate, releaseDate) &&
+            const DeepCollectionEquality().equals(other.popularity, popularity) &&
+            const DeepCollectionEquality().equals(other.posterPath, posterPath) &&
+            const DeepCollectionEquality().equals(other.releaseDate, releaseDate) &&
             const DeepCollectionEquality().equals(other.runtime, runtime) &&
             const DeepCollectionEquality().equals(other.tagline, tagline) &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.imdbId, imdbId) &&
-            const DeepCollectionEquality()
-                .equals(other.voteAverage, voteAverage));
+            const DeepCollectionEquality().equals(other.voteAverage, voteAverage));
   }
 
   @override
@@ -373,8 +363,7 @@ class _$_Popular implements _Popular {
 
   @JsonKey(ignore: true)
   @override
-  _$PopularCopyWith<_Popular> get copyWith =>
-      __$PopularCopyWithImpl<_Popular>(this, _$identity);
+  _$PopularCopyWith<_Popular> get copyWith => __$PopularCopyWithImpl<_Popular>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -430,6 +419,5 @@ abstract class _Popular implements Popular {
   double get voteAverage;
   @override
   @JsonKey(ignore: true)
-  _$PopularCopyWith<_Popular> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$PopularCopyWith<_Popular> get copyWith => throw _privateConstructorUsedError;
 }

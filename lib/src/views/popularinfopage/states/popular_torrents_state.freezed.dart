@@ -98,14 +98,12 @@ mixin _$PopularTorrentsState {
 
 /// @nodoc
 abstract class $PopularTorrentsStateCopyWith<$Res> {
-  factory $PopularTorrentsStateCopyWith(PopularTorrentsState value,
-          $Res Function(PopularTorrentsState) then) =
+  factory $PopularTorrentsStateCopyWith(PopularTorrentsState value, $Res Function(PopularTorrentsState) then) =
       _$PopularTorrentsStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$PopularTorrentsStateCopyWithImpl<$Res>
-    implements $PopularTorrentsStateCopyWith<$Res> {
+class _$PopularTorrentsStateCopyWithImpl<$Res> implements $PopularTorrentsStateCopyWith<$Res> {
   _$PopularTorrentsStateCopyWithImpl(this._value, this._then);
 
   final PopularTorrentsState _value;
@@ -116,23 +114,19 @@ class _$PopularTorrentsStateCopyWithImpl<$Res>
 /// @nodoc
 abstract class _$PopularTorrentsStateInitialCopyWith<$Res> {
   factory _$PopularTorrentsStateInitialCopyWith(
-          _PopularTorrentsStateInitial value,
-          $Res Function(_PopularTorrentsStateInitial) then) =
+          _PopularTorrentsStateInitial value, $Res Function(_PopularTorrentsStateInitial) then) =
       __$PopularTorrentsStateInitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$PopularTorrentsStateInitialCopyWithImpl<$Res>
-    extends _$PopularTorrentsStateCopyWithImpl<$Res>
+class __$PopularTorrentsStateInitialCopyWithImpl<$Res> extends _$PopularTorrentsStateCopyWithImpl<$Res>
     implements _$PopularTorrentsStateInitialCopyWith<$Res> {
   __$PopularTorrentsStateInitialCopyWithImpl(
-      _PopularTorrentsStateInitial _value,
-      $Res Function(_PopularTorrentsStateInitial) _then)
+      _PopularTorrentsStateInitial _value, $Res Function(_PopularTorrentsStateInitial) _then)
       : super(_value, (v) => _then(v as _PopularTorrentsStateInitial));
 
   @override
-  _PopularTorrentsStateInitial get _value =>
-      super._value as _PopularTorrentsStateInitial;
+  _PopularTorrentsStateInitial get _value => super._value as _PopularTorrentsStateInitial;
 }
 
 /// @nodoc
@@ -147,9 +141,7 @@ class _$_PopularTorrentsStateInitial implements _PopularTorrentsStateInitial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _PopularTorrentsStateInitial);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _PopularTorrentsStateInitial);
   }
 
   @override
@@ -237,23 +229,19 @@ abstract class _PopularTorrentsStateInitial implements PopularTorrentsState {
 /// @nodoc
 abstract class _$PopularTorrentsStateLoadingCopyWith<$Res> {
   factory _$PopularTorrentsStateLoadingCopyWith(
-          _PopularTorrentsStateLoading value,
-          $Res Function(_PopularTorrentsStateLoading) then) =
+          _PopularTorrentsStateLoading value, $Res Function(_PopularTorrentsStateLoading) then) =
       __$PopularTorrentsStateLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$PopularTorrentsStateLoadingCopyWithImpl<$Res>
-    extends _$PopularTorrentsStateCopyWithImpl<$Res>
+class __$PopularTorrentsStateLoadingCopyWithImpl<$Res> extends _$PopularTorrentsStateCopyWithImpl<$Res>
     implements _$PopularTorrentsStateLoadingCopyWith<$Res> {
   __$PopularTorrentsStateLoadingCopyWithImpl(
-      _PopularTorrentsStateLoading _value,
-      $Res Function(_PopularTorrentsStateLoading) _then)
+      _PopularTorrentsStateLoading _value, $Res Function(_PopularTorrentsStateLoading) _then)
       : super(_value, (v) => _then(v as _PopularTorrentsStateLoading));
 
   @override
-  _PopularTorrentsStateLoading get _value =>
-      super._value as _PopularTorrentsStateLoading;
+  _PopularTorrentsStateLoading get _value => super._value as _PopularTorrentsStateLoading;
 }
 
 /// @nodoc
@@ -268,9 +256,7 @@ class _$_PopularTorrentsStateLoading implements _PopularTorrentsStateLoading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _PopularTorrentsStateLoading);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _PopularTorrentsStateLoading);
   }
 
   @override
@@ -357,23 +343,21 @@ abstract class _PopularTorrentsStateLoading implements PopularTorrentsState {
 
 /// @nodoc
 abstract class _$PopularTorrentsStateDataCopyWith<$Res> {
-  factory _$PopularTorrentsStateDataCopyWith(_PopularTorrentsStateData value,
-          $Res Function(_PopularTorrentsStateData) then) =
+  factory _$PopularTorrentsStateDataCopyWith(
+          _PopularTorrentsStateData value, $Res Function(_PopularTorrentsStateData) then) =
       __$PopularTorrentsStateDataCopyWithImpl<$Res>;
   $Res call({List<Torrent> data});
 }
 
 /// @nodoc
-class __$PopularTorrentsStateDataCopyWithImpl<$Res>
-    extends _$PopularTorrentsStateCopyWithImpl<$Res>
+class __$PopularTorrentsStateDataCopyWithImpl<$Res> extends _$PopularTorrentsStateCopyWithImpl<$Res>
     implements _$PopularTorrentsStateDataCopyWith<$Res> {
-  __$PopularTorrentsStateDataCopyWithImpl(_PopularTorrentsStateData _value,
-      $Res Function(_PopularTorrentsStateData) _then)
+  __$PopularTorrentsStateDataCopyWithImpl(
+      _PopularTorrentsStateData _value, $Res Function(_PopularTorrentsStateData) _then)
       : super(_value, (v) => _then(v as _PopularTorrentsStateData));
 
   @override
-  _PopularTorrentsStateData get _value =>
-      super._value as _PopularTorrentsStateData;
+  _PopularTorrentsStateData get _value => super._value as _PopularTorrentsStateData;
 
   @override
   $Res call({
@@ -410,14 +394,12 @@ class _$_PopularTorrentsStateData implements _PopularTorrentsStateData {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
   _$PopularTorrentsStateDataCopyWith<_PopularTorrentsStateData> get copyWith =>
-      __$PopularTorrentsStateDataCopyWithImpl<_PopularTorrentsStateData>(
-          this, _$identity);
+      __$PopularTorrentsStateDataCopyWithImpl<_PopularTorrentsStateData>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -495,34 +477,30 @@ class _$_PopularTorrentsStateData implements _PopularTorrentsStateData {
 }
 
 abstract class _PopularTorrentsStateData implements PopularTorrentsState {
-  const factory _PopularTorrentsStateData({required List<Torrent> data}) =
-      _$_PopularTorrentsStateData;
+  const factory _PopularTorrentsStateData({required List<Torrent> data}) = _$_PopularTorrentsStateData;
 
   List<Torrent> get data;
   @JsonKey(ignore: true)
-  _$PopularTorrentsStateDataCopyWith<_PopularTorrentsStateData> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$PopularTorrentsStateDataCopyWith<_PopularTorrentsStateData> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$PopularTorrentsStateErrorCopyWith<$Res> {
-  factory _$PopularTorrentsStateErrorCopyWith(_PopularTorrentsStateError value,
-          $Res Function(_PopularTorrentsStateError) then) =
+  factory _$PopularTorrentsStateErrorCopyWith(
+          _PopularTorrentsStateError value, $Res Function(_PopularTorrentsStateError) then) =
       __$PopularTorrentsStateErrorCopyWithImpl<$Res>;
   $Res call({String? error});
 }
 
 /// @nodoc
-class __$PopularTorrentsStateErrorCopyWithImpl<$Res>
-    extends _$PopularTorrentsStateCopyWithImpl<$Res>
+class __$PopularTorrentsStateErrorCopyWithImpl<$Res> extends _$PopularTorrentsStateCopyWithImpl<$Res>
     implements _$PopularTorrentsStateErrorCopyWith<$Res> {
-  __$PopularTorrentsStateErrorCopyWithImpl(_PopularTorrentsStateError _value,
-      $Res Function(_PopularTorrentsStateError) _then)
+  __$PopularTorrentsStateErrorCopyWithImpl(
+      _PopularTorrentsStateError _value, $Res Function(_PopularTorrentsStateError) _then)
       : super(_value, (v) => _then(v as _PopularTorrentsStateError));
 
   @override
-  _PopularTorrentsStateError get _value =>
-      super._value as _PopularTorrentsStateError;
+  _PopularTorrentsStateError get _value => super._value as _PopularTorrentsStateError;
 
   @override
   $Res call({
@@ -559,15 +537,12 @@ class _$_PopularTorrentsStateError implements _PopularTorrentsStateError {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  _$PopularTorrentsStateErrorCopyWith<_PopularTorrentsStateError>
-      get copyWith =>
-          __$PopularTorrentsStateErrorCopyWithImpl<_PopularTorrentsStateError>(
-              this, _$identity);
+  _$PopularTorrentsStateErrorCopyWith<_PopularTorrentsStateError> get copyWith =>
+      __$PopularTorrentsStateErrorCopyWithImpl<_PopularTorrentsStateError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -645,11 +620,9 @@ class _$_PopularTorrentsStateError implements _PopularTorrentsStateError {
 }
 
 abstract class _PopularTorrentsStateError implements PopularTorrentsState {
-  const factory _PopularTorrentsStateError({String? error}) =
-      _$_PopularTorrentsStateError;
+  const factory _PopularTorrentsStateError({String? error}) = _$_PopularTorrentsStateError;
 
   String? get error;
   @JsonKey(ignore: true)
-  _$PopularTorrentsStateErrorCopyWith<_PopularTorrentsStateError>
-      get copyWith => throw _privateConstructorUsedError;
+  _$PopularTorrentsStateErrorCopyWith<_PopularTorrentsStateError> get copyWith => throw _privateConstructorUsedError;
 }

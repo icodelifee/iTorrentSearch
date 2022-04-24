@@ -98,8 +98,7 @@ mixin _$PopularState {
 
 /// @nodoc
 abstract class $PopularStateCopyWith<$Res> {
-  factory $PopularStateCopyWith(
-          PopularState value, $Res Function(PopularState) then) =
+  factory $PopularStateCopyWith(PopularState value, $Res Function(PopularState) then) =
       _$PopularStateCopyWithImpl<$Res>;
 }
 
@@ -114,17 +113,14 @@ class _$PopularStateCopyWithImpl<$Res> implements $PopularStateCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$PopularStateInitialCopyWith<$Res> {
-  factory _$PopularStateInitialCopyWith(_PopularStateInitial value,
-          $Res Function(_PopularStateInitial) then) =
+  factory _$PopularStateInitialCopyWith(_PopularStateInitial value, $Res Function(_PopularStateInitial) then) =
       __$PopularStateInitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$PopularStateInitialCopyWithImpl<$Res>
-    extends _$PopularStateCopyWithImpl<$Res>
+class __$PopularStateInitialCopyWithImpl<$Res> extends _$PopularStateCopyWithImpl<$Res>
     implements _$PopularStateInitialCopyWith<$Res> {
-  __$PopularStateInitialCopyWithImpl(
-      _PopularStateInitial _value, $Res Function(_PopularStateInitial) _then)
+  __$PopularStateInitialCopyWithImpl(_PopularStateInitial _value, $Res Function(_PopularStateInitial) _then)
       : super(_value, (v) => _then(v as _PopularStateInitial));
 
   @override
@@ -143,8 +139,7 @@ class _$_PopularStateInitial implements _PopularStateInitial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _PopularStateInitial);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _PopularStateInitial);
   }
 
   @override
@@ -231,17 +226,14 @@ abstract class _PopularStateInitial implements PopularState {
 
 /// @nodoc
 abstract class _$PopularStateLoadingCopyWith<$Res> {
-  factory _$PopularStateLoadingCopyWith(_PopularStateLoading value,
-          $Res Function(_PopularStateLoading) then) =
+  factory _$PopularStateLoadingCopyWith(_PopularStateLoading value, $Res Function(_PopularStateLoading) then) =
       __$PopularStateLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$PopularStateLoadingCopyWithImpl<$Res>
-    extends _$PopularStateCopyWithImpl<$Res>
+class __$PopularStateLoadingCopyWithImpl<$Res> extends _$PopularStateCopyWithImpl<$Res>
     implements _$PopularStateLoadingCopyWith<$Res> {
-  __$PopularStateLoadingCopyWithImpl(
-      _PopularStateLoading _value, $Res Function(_PopularStateLoading) _then)
+  __$PopularStateLoadingCopyWithImpl(_PopularStateLoading _value, $Res Function(_PopularStateLoading) _then)
       : super(_value, (v) => _then(v as _PopularStateLoading));
 
   @override
@@ -260,8 +252,7 @@ class _$_PopularStateLoading implements _PopularStateLoading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _PopularStateLoading);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _PopularStateLoading);
   }
 
   @override
@@ -348,18 +339,15 @@ abstract class _PopularStateLoading implements PopularState {
 
 /// @nodoc
 abstract class _$PopularStateDataCopyWith<$Res> {
-  factory _$PopularStateDataCopyWith(
-          _PopularStateData value, $Res Function(_PopularStateData) then) =
+  factory _$PopularStateDataCopyWith(_PopularStateData value, $Res Function(_PopularStateData) then) =
       __$PopularStateDataCopyWithImpl<$Res>;
   $Res call({List<Popular> data});
 }
 
 /// @nodoc
-class __$PopularStateDataCopyWithImpl<$Res>
-    extends _$PopularStateCopyWithImpl<$Res>
+class __$PopularStateDataCopyWithImpl<$Res> extends _$PopularStateCopyWithImpl<$Res>
     implements _$PopularStateDataCopyWith<$Res> {
-  __$PopularStateDataCopyWithImpl(
-      _PopularStateData _value, $Res Function(_PopularStateData) _then)
+  __$PopularStateDataCopyWithImpl(_PopularStateData _value, $Res Function(_PopularStateData) _then)
       : super(_value, (v) => _then(v as _PopularStateData));
 
   @override
@@ -400,8 +388,7 @@ class _$_PopularStateData implements _PopularStateData {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
@@ -484,29 +471,24 @@ class _$_PopularStateData implements _PopularStateData {
 }
 
 abstract class _PopularStateData implements PopularState {
-  const factory _PopularStateData({required List<Popular> data}) =
-      _$_PopularStateData;
+  const factory _PopularStateData({required List<Popular> data}) = _$_PopularStateData;
 
   List<Popular> get data;
   @JsonKey(ignore: true)
-  _$PopularStateDataCopyWith<_PopularStateData> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$PopularStateDataCopyWith<_PopularStateData> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$PopularStateErrorCopyWith<$Res> {
-  factory _$PopularStateErrorCopyWith(
-          _PopularStateError value, $Res Function(_PopularStateError) then) =
+  factory _$PopularStateErrorCopyWith(_PopularStateError value, $Res Function(_PopularStateError) then) =
       __$PopularStateErrorCopyWithImpl<$Res>;
   $Res call({String? error});
 }
 
 /// @nodoc
-class __$PopularStateErrorCopyWithImpl<$Res>
-    extends _$PopularStateCopyWithImpl<$Res>
+class __$PopularStateErrorCopyWithImpl<$Res> extends _$PopularStateCopyWithImpl<$Res>
     implements _$PopularStateErrorCopyWith<$Res> {
-  __$PopularStateErrorCopyWithImpl(
-      _PopularStateError _value, $Res Function(_PopularStateError) _then)
+  __$PopularStateErrorCopyWithImpl(_PopularStateError _value, $Res Function(_PopularStateError) _then)
       : super(_value, (v) => _then(v as _PopularStateError));
 
   @override
@@ -547,8 +529,7 @@ class _$_PopularStateError implements _PopularStateError {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
@@ -635,6 +616,5 @@ abstract class _PopularStateError implements PopularState {
 
   String? get error;
   @JsonKey(ignore: true)
-  _$PopularStateErrorCopyWith<_PopularStateError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$PopularStateErrorCopyWith<_PopularStateError> get copyWith => throw _privateConstructorUsedError;
 }
