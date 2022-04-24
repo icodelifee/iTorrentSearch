@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:one_context/one_context.dart';
 
@@ -7,8 +8,13 @@ import 'app/views/homepage/pages/homepage.dart';
 import 'gen/fonts.gen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
   // InAppPurchaseConnection.enablePendingPurchases();
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitDown,
+    DeviceOrientation.portraitUp,
+  ]);
+
   runApp(const ProviderScope(child: MyApp()));
 }
 
