@@ -1,7 +1,9 @@
+import 'package:fleasy/fleasy.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:one_context/one_context.dart';
 
+import '../../../../di.dart';
 import '../../../config/font_weight.dart';
 import '../../../presentation/widgets/frosted_glass.dart';
 import '../../../presentation/widgets/listview_fade.dart';
@@ -20,7 +22,7 @@ class PopularTorrentsList extends ConsumerStatefulWidget {
   final String imdbId;
 
   static void showModal({required String imdbId}) {
-    OneContext().showModalBottomSheet<PopularTorrentsList>(
+    di<OneContext>().showModalBottomSheet<PopularTorrentsList>(
       elevation: 0,
       backgroundColor: Colors.transparent,
       builder: (_) => PopularTorrentsList(imdbId: imdbId),
@@ -50,7 +52,7 @@ class _PopularTorrentsListState extends ConsumerState<PopularTorrentsList> {
         topRight: Radius.circular(16),
       ),
       border: const Border.fromBorderSide(BorderSide(color: Colors.transparent)),
-      height: OneContext().mediaQuery.size.height * 0.5,
+      height: context.screenHeight * 0.5,
       width: double.infinity,
       child: LayoutBuilder(
         builder: (context, constraints) {

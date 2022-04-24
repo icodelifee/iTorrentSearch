@@ -43,8 +43,8 @@ class _MyAppState extends State<MyApp> {
         scaffoldBackgroundColor: CColors.backgroundColor,
       ),
       color: CColors.mainColor,
-      builder: OneContext().builder,
-      navigatorKey: OneContext().key,
+      builder: di<OneContext>().builder,
+      navigatorKey: di<OneContext>().key,
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
     );

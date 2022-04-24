@@ -1,5 +1,5 @@
+import 'package:fleasy/fleasy.dart';
 import 'package:flutter/material.dart';
-import 'package:one_context/one_context.dart';
 
 import '../../../../gen/assets.gen.dart';
 
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: OneContext().mediaQuery.size.height * 0.1),
+              SizedBox(height: context.screenHeight * 0.1),
               const Text(
                 'iTorrent Search',
                 style: TextStyle(

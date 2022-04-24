@@ -7,6 +7,7 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:one_context/one_context.dart';
 
+import '../../../../di.dart';
 import '../../../config/colors.dart';
 import '../../../data/models/remote/popular.dart';
 import '../../../presentation/widgets/frosted_glass.dart';
@@ -93,7 +94,7 @@ class _PopularListState extends ConsumerState<PopularList> {
   }
 
   void _navigateToPopular(Popular data) {
-    OneContext().push<CupertinoPageRoute>(
+    di<OneContext>().push<CupertinoPageRoute>(
       CupertinoPageRoute(builder: (BuildContext context) => PopularInfoPage(popular: data)),
     );
   }

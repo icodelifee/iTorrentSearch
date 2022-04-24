@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
+import 'package:one_context/one_context.dart';
 
 import 'di.config.dart';
 import 'src/config/constants.dart';
@@ -17,4 +18,7 @@ abstract class RegisterModules {
 
   @lazySingleton
   Dio get dio => Dio()..options.headers['Authorization'] = Constants.auth;
+
+  @singleton
+  OneContext get oneContext => OneContext();
 }
