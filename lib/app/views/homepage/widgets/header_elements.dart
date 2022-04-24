@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../../gen/assets.gen.dart';
 import 'dummy_appbar.dart';
 
-class HeaderElements extends StatelessWidget {
+class HeaderElements extends HookConsumerWidget {
   const HeaderElements({
     Key? key,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,

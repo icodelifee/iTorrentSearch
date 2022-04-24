@@ -1,7 +1,6 @@
 // ignore_for_file: require_trailing_commas
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:dartx/dartx.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -11,6 +10,7 @@ import 'package:one_context/one_context.dart';
 import '../../../config/colors.dart';
 import '../../../data/models/remote/popular.dart';
 import '../../../shared/frosted_glass.dart';
+import '../../../shared/grid_loading_shimmer.dart';
 import '../../../shared/listview_fade.dart';
 import '../../../utils/extensions/to_poster_url.dart';
 import '../../popularinfopage/popular_info_page.dart';
@@ -46,7 +46,7 @@ class _PopularListState extends ConsumerState<PopularList> {
           backgroundColor: CColors.accentColor.withOpacity(0.3),
           color: CColors.accentColor,
           onRefresh: () async {
-            ref.read(popularStateProvider.notifier).fetchPopular();
+            ref.read(popularStateProvider.notifier).fetchPopular(refresh: true);
           },
           child: ListViewFadeWidget(
             child: AnimationLimiter(
@@ -95,55 +95,6 @@ class _PopularListState extends ConsumerState<PopularList> {
   void _navigateToPopular(Popular data) {
     OneContext().push<CupertinoPageRoute>(
       CupertinoPageRoute(builder: (BuildContext context) => PopularInfoPage(popular: data)),
-    );
-  }
-}
-
-class GridLoadingShimmer extends StatefulWidget {
-  const GridLoadingShimmer({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  State<GridLoadingShimmer> createState() => _GridLoadingShimmerState();
-}
-
-class _GridLoadingShimmerState extends State<GridLoadingShimmer>
-    with SingleTickerProviderStateMixin {
-  late final pulsatingController = AnimationController(
-    vsync: this,
-    duration: 1.seconds,
-  )..repeat(reverse: true);
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      physics: const BouncingScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
-        mainAxisExtent: 250,
-      ),
-      shrinkWrap: true,
-      itemCount: 6,
-      itemBuilder: (context, index) {
-        return AnimationConfiguration.staggeredGrid(
-          position: index,
-          duration: const Duration(milliseconds: 500),
-          columnCount: 2,
-          child: ScaleAnimation(
-            child: FadeInAnimation(
-              child: FadeTransition(
-                opacity: pulsatingController,
-                child: const GlassContainer(
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
-                ),
-              ),
-            ),
-          ),
-        );
-      },
     );
   }
 }

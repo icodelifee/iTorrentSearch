@@ -15,13 +15,16 @@ class PopularNotifier extends StateNotifier<PopularState> {
 
   final APIRepository _apiRepository;
 
-  Future<void> fetchPopular() async {
-    state = const PopularState.loading();
-    try {
-      final popular = await _apiRepository.getPopularTorrents();
-      state = PopularState.data(data: popular);
-    } catch (e) {
-      state = const PopularState.error(error: 'Some Error Occurred!');
+  Future<void> fetchPopular({bool refresh = false}) async {
+    if (refresh || !state.isData) {
+      state = const PopularState.loading();
+
+      try {
+        final popular = await _apiRepository.getPopularTorrents();
+        state = PopularState.data(data: popular);
+      } catch (e) {
+        state = const PopularState.error(error: 'Some Error Occurred!');
+      }
     }
   }
 }

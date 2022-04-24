@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:itorrentsearch/app/data/models/remote/popular.dart';
+
+import '../../../data/models/remote/popular.dart';
 
 part 'popular_state.freezed.dart';
 
