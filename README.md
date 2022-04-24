@@ -1,6 +1,6 @@
 # itorrentsearch
 
-A new Flutter project.
+Refactoring in progress
 
 ## Getting Started
 
