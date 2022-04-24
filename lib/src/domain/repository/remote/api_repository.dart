@@ -2,8 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/http.dart';
 
-import '../../models/remote/popular.dart';
-import '../../models/remote/torrent.dart';
+import '../../entities/popular.dart';
+import '../../entities/torrent.dart';
 
 part 'api_repository.g.dart';
 

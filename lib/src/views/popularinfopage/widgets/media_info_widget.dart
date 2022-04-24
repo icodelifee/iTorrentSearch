@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../../../config/font_weight.dart';
-import '../../../data/models/remote/popular.dart';
+import '../../../domain/entities/popular.dart';
 import '../../../utils/mins_to_hours.dart';
 
 class MediaInfoWidget extends StatelessWidget {

@@ -9,7 +9,7 @@ import 'package:one_context/one_context.dart';
 
 import '../../../../di.dart';
 import '../../../config/colors.dart';
-import '../../../data/models/remote/popular.dart';
+import '../../../domain/entities/popular.dart';
 import '../../../presentation/widgets/frosted_glass.dart';
 import '../../../presentation/widgets/grid_loading_shimmer.dart';
 import '../../../presentation/widgets/listview_fade.dart';

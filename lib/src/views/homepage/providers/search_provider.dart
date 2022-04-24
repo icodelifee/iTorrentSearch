@@ -1,8 +1,8 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../../di.dart';
-import '../../../data/enums/search_provider.dart';
-import '../../../data/repository/remote/api_repository.dart';
+import '../../../domain/enums/search_provider.dart';
+import '../../../domain/repository/remote/api_repository.dart';
 import '../states/search_state.dart';
 
 final selectedSearchTabProvider = StateProvider<SearchProvider>(

@@ -1,4 +1,4 @@
-import '../../data/models/remote/torrent.dart';
+import '../../domain/entities/torrent.dart';
 
 extension TorrentX on Torrent {
   bool get isNotEmpty {

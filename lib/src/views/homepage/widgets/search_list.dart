@@ -6,7 +6,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../config/colors.dart';
 import '../../../config/font_weight.dart';
-import '../../../data/enums/search_provider.dart';
+import '../../../domain/entities/torrent.dart';
+import '../../../domain/enums/search_provider.dart';
 import '../../../presentation/widgets/default_progress_indicator.dart';
 import '../../../presentation/widgets/listview_fade.dart';
 import '../../../presentation/widgets/reuseables.dart';
@@ -31,6 +32,10 @@ class _SearchListState extends ConsumerState<SearchList> {
       initial: () => empty,
       loading: () => const DefaultProgressIndicator.center(),
       data: (data) {
+        // TODO: this is fucking stupid, due to false positive "as" casting to Torrent
+        // for some reason typedef does not promote the entity type.
+        final torrents = Map<SearchProvider, List<Torrent>>.from(data);
+
         return DefaultTabController(
           length: 3,
           child: Scaffold(
@@ -81,7 +86,7 @@ class _SearchListState extends ConsumerState<SearchList> {
                         child: SlideAnimation(
                           verticalOffset: 50.0,
                           child: FadeInAnimation(
-                            child: TorrentInfoTile(torrent: data[provider]![index]),
+                            child: TorrentInfoTile(torrent: torrents[provider]![index]),
                           ),
                         ),
                       ),

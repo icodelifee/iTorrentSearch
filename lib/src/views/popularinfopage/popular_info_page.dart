@@ -5,7 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../config/colors.dart';
 import '../../config/font_weight.dart';
-import '../../data/models/remote/popular.dart';
+import '../../domain/entities/popular.dart';
 import '../../presentation/widgets/frosted_glass.dart';
 import '../../presentation/widgets/reuseables.dart';
 import 'providers/popular_info_provider.dart';

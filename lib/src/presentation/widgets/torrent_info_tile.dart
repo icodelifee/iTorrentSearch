@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 import '../../config/colors.dart';
 import '../../config/font_weight.dart';
-import '../../data/models/remote/torrent.dart';
+import '../../domain/entities/torrent.dart';
 import 'frosted_glass.dart';
 import 'reuseables.dart';
 

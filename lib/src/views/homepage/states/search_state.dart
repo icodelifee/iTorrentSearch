@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../data/enums/search_provider.dart';
-import '../../../data/models/remote/torrent.dart';
+import '../../../domain/entities/torrent.dart';
+import '../../../domain/enums/search_provider.dart';
 
 part 'search_state.freezed.dart';
 

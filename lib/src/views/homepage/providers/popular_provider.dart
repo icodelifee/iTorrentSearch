@@ -1,7 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../../di.dart';
-import '../../../data/repository/remote/api_repository.dart';
+import '../../../domain/repository/remote/api_repository.dart';
 import '../states/popular_state.dart';
 
 final popularStateProvider = StateNotifierProvider<PopularNotifier, PopularState>((ref) {

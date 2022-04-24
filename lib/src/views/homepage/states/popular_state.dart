@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../data/models/remote/popular.dart';
+import '../../../domain/entities/popular.dart';
 
 part 'popular_state.freezed.dart';
 

@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../data/models/remote/torrent.dart';
+import '../../../domain/entities/torrent.dart';
 
 part 'popular_torrents_state.freezed.dart';
 
