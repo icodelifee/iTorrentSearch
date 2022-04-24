@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:one_context/one_context.dart';
 
-import 'app/config/colors.dart';
-import 'app/views/homepage/pages/homepage.dart';
 import 'gen/fonts.gen.dart';
+import 'src/config/colors.dart';
+import 'src/views/homepage/pages/homepage.dart';
 
 void main() {
   // InAppPurchaseConnection.enablePendingPurchases();

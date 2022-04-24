@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../../constants.dart';
+import 'constants.dart';
 
 Dio get dioInstance {
   final client = Dio();

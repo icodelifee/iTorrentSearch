@@ -1,4 +1,4 @@
-import 'package:itorrentsearch/app/data/models/remote/torrent.dart';
+import '../../data/models/remote/torrent.dart';
 
 extension TorrentX on Torrent {
   bool get isNotEmpty {

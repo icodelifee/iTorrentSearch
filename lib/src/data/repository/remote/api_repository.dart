@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';
 
-import '../../../../constants.dart';
+import '../../../config/constants.dart';
 import '../../models/remote/popular.dart';
 import '../../models/remote/torrent.dart';
 
