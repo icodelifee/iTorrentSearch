@@ -5,10 +5,10 @@ import 'package:injectable/injectable.dart';
 import 'di.config.dart';
 import 'src/config/constants.dart';
 
-final getIt = GetIt.instance;
+final di = GetIt.instance;
 
 @InjectableInit()
-void configureDependencies() => $initGetIt(getIt);
+void configureDependencies() => $initGetIt(di);
 
 @module
 abstract class RegisterModules {

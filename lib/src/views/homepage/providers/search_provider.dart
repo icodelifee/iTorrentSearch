@@ -1,7 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../../../di.dart';
 import '../../../data/enums/search_provider.dart';
-import '../../../data/providers/api_repository_provider.dart';
 import '../../../data/repository/remote/api_repository.dart';
 import '../states/search_state.dart';
 
@@ -10,15 +10,11 @@ final selectedSearchTabProvider = StateProvider<SearchProvider>(
 );
 
 final searchStateProvider = StateNotifierProvider<SearchNotifier, SearchState>((ref) {
-  return SearchNotifier(apiRepository: ref.watch(apiRepositoryProvider));
+  return SearchNotifier();
 });
 
 class SearchNotifier extends StateNotifier<SearchState> {
-  SearchNotifier({required APIRepository apiRepository})
-      : _apiRepository = apiRepository,
-        super(const SearchState.initial());
-
-  final APIRepository _apiRepository;
+  SearchNotifier() : super(const SearchState.initial());
 
   Future<void> searchTorrents({required String? query}) async {
     state = const SearchState.loading();
@@ -27,8 +23,8 @@ class SearchNotifier extends StateNotifier<SearchState> {
     final SearchResult searchR = {};
     final q = query?.trim();
     try {
-      searchR[SearchProvider.leetX] = await _apiRepository.search1337x(q!);
-      searchR[SearchProvider.piratebay] = await _apiRepository.searchTPB(q);
+      searchR[SearchProvider.leetX] = await di<APIRepository>().search1337x(q!);
+      searchR[SearchProvider.piratebay] = await di<APIRepository>().searchTPB(q);
       // searchR[SearchProvider.rarbg] = [];
       state = SearchState.data(data: searchR);
     } catch (e) {
