@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'search_state.dart';
@@ -142,7 +143,8 @@ class _$_SearchStateInitial implements _SearchStateInitial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _SearchStateInitial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _SearchStateInitial);
   }
 
   @override
@@ -258,7 +260,8 @@ class _$_SearchStateLoading implements _SearchStateLoading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _SearchStateLoading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _SearchStateLoading);
   }
 
   @override
@@ -391,14 +394,14 @@ class _$_SearchStateData implements _SearchStateData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SearchStateData &&
-            (identical(other.data, data) ||
-                const DeepCollectionEquality().equals(other.data, data)));
+        (other.runtimeType == runtimeType &&
+            other is _SearchStateData &&
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
@@ -484,8 +487,7 @@ abstract class _SearchStateData implements SearchState {
   const factory _SearchStateData(
       {required Map<SearchProvider, List<Torrent>> data}) = _$_SearchStateData;
 
-  Map<SearchProvider, List<Torrent>> get data =>
-      throw _privateConstructorUsedError;
+  Map<SearchProvider, List<Torrent>> get data;
   @JsonKey(ignore: true)
   _$SearchStateDataCopyWith<_SearchStateData> get copyWith =>
       throw _privateConstructorUsedError;
@@ -539,14 +541,14 @@ class _$_SearchStateError implements _SearchStateError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SearchStateError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _SearchStateError &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
@@ -631,7 +633,7 @@ class _$_SearchStateError implements _SearchStateError {
 abstract class _SearchStateError implements SearchState {
   const factory _SearchStateError({String? error}) = _$_SearchStateError;
 
-  String? get error => throw _privateConstructorUsedError;
+  String? get error;
   @JsonKey(ignore: true)
   _$SearchStateErrorCopyWith<_SearchStateError> get copyWith =>
       throw _privateConstructorUsedError;

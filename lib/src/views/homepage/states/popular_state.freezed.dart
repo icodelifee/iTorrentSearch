@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'popular_state.dart';
@@ -142,7 +143,8 @@ class _$_PopularStateInitial implements _PopularStateInitial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _PopularStateInitial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _PopularStateInitial);
   }
 
   @override
@@ -258,7 +260,8 @@ class _$_PopularStateLoading implements _PopularStateLoading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _PopularStateLoading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _PopularStateLoading);
   }
 
   @override
@@ -391,14 +394,14 @@ class _$_PopularStateData implements _PopularStateData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PopularStateData &&
-            (identical(other.data, data) ||
-                const DeepCollectionEquality().equals(other.data, data)));
+        (other.runtimeType == runtimeType &&
+            other is _PopularStateData &&
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
@@ -484,7 +487,7 @@ abstract class _PopularStateData implements PopularState {
   const factory _PopularStateData({required List<Popular> data}) =
       _$_PopularStateData;
 
-  List<Popular> get data => throw _privateConstructorUsedError;
+  List<Popular> get data;
   @JsonKey(ignore: true)
   _$PopularStateDataCopyWith<_PopularStateData> get copyWith =>
       throw _privateConstructorUsedError;
@@ -538,14 +541,14 @@ class _$_PopularStateError implements _PopularStateError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PopularStateError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _PopularStateError &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
@@ -630,7 +633,7 @@ class _$_PopularStateError implements _PopularStateError {
 abstract class _PopularStateError implements PopularState {
   const factory _PopularStateError({String? error}) = _$_PopularStateError;
 
-  String? get error => throw _privateConstructorUsedError;
+  String? get error;
   @JsonKey(ignore: true)
   _$PopularStateErrorCopyWith<_PopularStateError> get copyWith =>
       throw _privateConstructorUsedError;

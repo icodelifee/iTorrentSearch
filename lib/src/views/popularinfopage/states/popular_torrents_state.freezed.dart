@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'popular_torrents_state.dart';
@@ -146,7 +147,9 @@ class _$_PopularTorrentsStateInitial implements _PopularTorrentsStateInitial {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _PopularTorrentsStateInitial);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PopularTorrentsStateInitial);
   }
 
   @override
@@ -265,7 +268,9 @@ class _$_PopularTorrentsStateLoading implements _PopularTorrentsStateLoading {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is _PopularTorrentsStateLoading);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PopularTorrentsStateLoading);
   }
 
   @override
@@ -399,14 +404,14 @@ class _$_PopularTorrentsStateData implements _PopularTorrentsStateData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PopularTorrentsStateData &&
-            (identical(other.data, data) ||
-                const DeepCollectionEquality().equals(other.data, data)));
+        (other.runtimeType == runtimeType &&
+            other is _PopularTorrentsStateData &&
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(data);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
@@ -493,7 +498,7 @@ abstract class _PopularTorrentsStateData implements PopularTorrentsState {
   const factory _PopularTorrentsStateData({required List<Torrent> data}) =
       _$_PopularTorrentsStateData;
 
-  List<Torrent> get data => throw _privateConstructorUsedError;
+  List<Torrent> get data;
   @JsonKey(ignore: true)
   _$PopularTorrentsStateDataCopyWith<_PopularTorrentsStateData> get copyWith =>
       throw _privateConstructorUsedError;
@@ -548,14 +553,14 @@ class _$_PopularTorrentsStateError implements _PopularTorrentsStateError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PopularTorrentsStateError &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)));
+        (other.runtimeType == runtimeType &&
+            other is _PopularTorrentsStateError &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
@@ -643,7 +648,7 @@ abstract class _PopularTorrentsStateError implements PopularTorrentsState {
   const factory _PopularTorrentsStateError({String? error}) =
       _$_PopularTorrentsStateError;
 
-  String? get error => throw _privateConstructorUsedError;
+  String? get error;
   @JsonKey(ignore: true)
   _$PopularTorrentsStateErrorCopyWith<_PopularTorrentsStateError>
       get copyWith => throw _privateConstructorUsedError;

@@ -6,10 +6,10 @@ part of 'api_repository.dart';
 // RetrofitGenerator
 // **************************************************************************
 
+// ignore_for_file: unnecessary_brace_in_string_interps
+
 class _APIRepository implements APIRepository {
-  _APIRepository(this._dio, {this.baseUrl}) {
-    baseUrl ??= 'https://itorrentapi.herokuapp.com';
-  }
+  _APIRepository(this._dio, {this.baseUrl});
 
   final Dio _dio;
 

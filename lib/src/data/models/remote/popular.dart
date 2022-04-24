@@ -3,6 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'popular.freezed.dart';
 part 'popular.g.dart';
 
+@JsonSerializable()
 @freezed
 class Popular with _$Popular {
   const factory Popular({

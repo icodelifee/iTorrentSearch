@@ -28,6 +28,7 @@ dependencies:
   go_router: ^2.1.1
   hooks_riverpod: ^1.0.3
   in_app_purchase: ^1.0.9
+  injectable: ^1.5.3
   intl: null
   lazy_loading_list: ^1.0.0+1
   logger: any
@@ -49,6 +50,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   freezed: null
+  injectable_generator: ^1.5.3
   json_serializable: null
   retrofit_generator: any
 

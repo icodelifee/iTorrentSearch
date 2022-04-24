@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'torrent.dart';
@@ -40,7 +41,7 @@ class _$TorrentTearOff {
     );
   }
 
-  Torrent fromJson(Map<String, Object> json) {
+  Torrent fromJson(Map<String, Object?> json) {
     return Torrent.fromJson(json);
   }
 }
@@ -233,33 +234,27 @@ class _$_Torrent implements _Torrent {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Torrent &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.seeds, seeds) ||
-                const DeepCollectionEquality().equals(other.seeds, seeds)) &&
-            (identical(other.leechs, leechs) ||
-                const DeepCollectionEquality().equals(other.leechs, leechs)) &&
-            (identical(other.size, size) ||
-                const DeepCollectionEquality().equals(other.size, size)) &&
-            (identical(other.added, added) ||
-                const DeepCollectionEquality().equals(other.added, added)) &&
-            (identical(other.link, link) ||
-                const DeepCollectionEquality().equals(other.link, link)) &&
-            (identical(other.magnet, magnet) ||
-                const DeepCollectionEquality().equals(other.magnet, magnet)));
+        (other.runtimeType == runtimeType &&
+            other is _Torrent &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality().equals(other.seeds, seeds) &&
+            const DeepCollectionEquality().equals(other.leechs, leechs) &&
+            const DeepCollectionEquality().equals(other.size, size) &&
+            const DeepCollectionEquality().equals(other.added, added) &&
+            const DeepCollectionEquality().equals(other.link, link) &&
+            const DeepCollectionEquality().equals(other.magnet, magnet));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(seeds) ^
-      const DeepCollectionEquality().hash(leechs) ^
-      const DeepCollectionEquality().hash(size) ^
-      const DeepCollectionEquality().hash(added) ^
-      const DeepCollectionEquality().hash(link) ^
-      const DeepCollectionEquality().hash(magnet);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(title),
+      const DeepCollectionEquality().hash(seeds),
+      const DeepCollectionEquality().hash(leechs),
+      const DeepCollectionEquality().hash(size),
+      const DeepCollectionEquality().hash(added),
+      const DeepCollectionEquality().hash(link),
+      const DeepCollectionEquality().hash(magnet));
 
   @JsonKey(ignore: true)
   @override
@@ -285,19 +280,19 @@ abstract class _Torrent implements Torrent {
   factory _Torrent.fromJson(Map<String, dynamic> json) = _$_Torrent.fromJson;
 
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  String get seeds => throw _privateConstructorUsedError;
+  String get seeds;
   @override
-  String get leechs => throw _privateConstructorUsedError;
+  String get leechs;
   @override
-  String get size => throw _privateConstructorUsedError;
+  String get size;
   @override
-  String get added => throw _privateConstructorUsedError;
+  String get added;
   @override
-  String get link => throw _privateConstructorUsedError;
+  String get link;
   @override
-  String get magnet => throw _privateConstructorUsedError;
+  String get magnet;
   @override
   @JsonKey(ignore: true)
   _$TorrentCopyWith<_Torrent> get copyWith =>

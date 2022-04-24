@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'popular.dart';
@@ -50,7 +51,7 @@ class _$PopularTearOff {
     );
   }
 
-  Popular fromJson(Map<String, Object> json) {
+  Popular fromJson(Map<String, Object?> json) {
     return Popular.fromJson(json);
   }
 }
@@ -333,56 +334,42 @@ class _$_Popular implements _Popular {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Popular &&
-            (identical(other.backdropPath, backdropPath) ||
-                const DeepCollectionEquality()
-                    .equals(other.backdropPath, backdropPath)) &&
-            (identical(other.genres, genres) ||
-                const DeepCollectionEquality().equals(other.genres, genres)) &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.overview, overview) ||
-                const DeepCollectionEquality()
-                    .equals(other.overview, overview)) &&
-            (identical(other.popularity, popularity) ||
-                const DeepCollectionEquality()
-                    .equals(other.popularity, popularity)) &&
-            (identical(other.posterPath, posterPath) ||
-                const DeepCollectionEquality()
-                    .equals(other.posterPath, posterPath)) &&
-            (identical(other.releaseDate, releaseDate) ||
-                const DeepCollectionEquality()
-                    .equals(other.releaseDate, releaseDate)) &&
-            (identical(other.runtime, runtime) ||
-                const DeepCollectionEquality()
-                    .equals(other.runtime, runtime)) &&
-            (identical(other.tagline, tagline) ||
-                const DeepCollectionEquality()
-                    .equals(other.tagline, tagline)) &&
-            (identical(other.title, title) ||
-                const DeepCollectionEquality().equals(other.title, title)) &&
-            (identical(other.imdbId, imdbId) ||
-                const DeepCollectionEquality().equals(other.imdbId, imdbId)) &&
-            (identical(other.voteAverage, voteAverage) ||
-                const DeepCollectionEquality()
-                    .equals(other.voteAverage, voteAverage)));
+        (other.runtimeType == runtimeType &&
+            other is _Popular &&
+            const DeepCollectionEquality()
+                .equals(other.backdropPath, backdropPath) &&
+            const DeepCollectionEquality().equals(other.genres, genres) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.overview, overview) &&
+            const DeepCollectionEquality()
+                .equals(other.popularity, popularity) &&
+            const DeepCollectionEquality()
+                .equals(other.posterPath, posterPath) &&
+            const DeepCollectionEquality()
+                .equals(other.releaseDate, releaseDate) &&
+            const DeepCollectionEquality().equals(other.runtime, runtime) &&
+            const DeepCollectionEquality().equals(other.tagline, tagline) &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality().equals(other.imdbId, imdbId) &&
+            const DeepCollectionEquality()
+                .equals(other.voteAverage, voteAverage));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(backdropPath) ^
-      const DeepCollectionEquality().hash(genres) ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(overview) ^
-      const DeepCollectionEquality().hash(popularity) ^
-      const DeepCollectionEquality().hash(posterPath) ^
-      const DeepCollectionEquality().hash(releaseDate) ^
-      const DeepCollectionEquality().hash(runtime) ^
-      const DeepCollectionEquality().hash(tagline) ^
-      const DeepCollectionEquality().hash(title) ^
-      const DeepCollectionEquality().hash(imdbId) ^
-      const DeepCollectionEquality().hash(voteAverage);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(backdropPath),
+      const DeepCollectionEquality().hash(genres),
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(overview),
+      const DeepCollectionEquality().hash(popularity),
+      const DeepCollectionEquality().hash(posterPath),
+      const DeepCollectionEquality().hash(releaseDate),
+      const DeepCollectionEquality().hash(runtime),
+      const DeepCollectionEquality().hash(tagline),
+      const DeepCollectionEquality().hash(title),
+      const DeepCollectionEquality().hash(imdbId),
+      const DeepCollectionEquality().hash(voteAverage));
 
   @JsonKey(ignore: true)
   @override
@@ -414,33 +401,33 @@ abstract class _Popular implements Popular {
 
   @override
   @JsonKey(name: 'backdrop_path')
-  String get backdropPath => throw _privateConstructorUsedError;
+  String get backdropPath;
   @override
-  List<String> get genres => throw _privateConstructorUsedError;
+  List<String> get genres;
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get overview => throw _privateConstructorUsedError;
+  String get overview;
   @override
-  double get popularity => throw _privateConstructorUsedError;
+  double get popularity;
   @override
   @JsonKey(name: 'poster_path')
-  String get posterPath => throw _privateConstructorUsedError;
+  String get posterPath;
   @override
   @JsonKey(name: 'release_date')
-  DateTime get releaseDate => throw _privateConstructorUsedError;
+  DateTime get releaseDate;
   @override
-  int get runtime => throw _privateConstructorUsedError;
+  int get runtime;
   @override
-  String get tagline => throw _privateConstructorUsedError;
+  String get tagline;
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
   @JsonKey(name: 'imdb_id')
-  String get imdbId => throw _privateConstructorUsedError;
+  String get imdbId;
   @override
   @JsonKey(name: 'vote_average')
-  double get voteAverage => throw _privateConstructorUsedError;
+  double get voteAverage;
   @override
   @JsonKey(ignore: true)
   _$PopularCopyWith<_Popular> get copyWith =>

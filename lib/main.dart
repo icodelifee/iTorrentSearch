@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:one_context/one_context.dart';
 
+import 'di.dart';
 import 'gen/fonts.gen.dart';
 import 'src/config/colors.dart';
 import 'src/views/homepage/pages/homepage.dart';
@@ -14,6 +15,7 @@ void main() {
     DeviceOrientation.portraitDown,
     DeviceOrientation.portraitUp,
   ]);
+  configureDependencies();
 
   runApp(const ProviderScope(child: MyApp()));
 }

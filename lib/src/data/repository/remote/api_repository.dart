@@ -1,15 +1,17 @@
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 import 'package:retrofit/http.dart';
 
-import '../../../config/constants.dart';
 import '../../models/remote/popular.dart';
 import '../../models/remote/torrent.dart';
 
 part 'api_repository.g.dart';
 
-@RestApi(baseUrl: Constants.itapiUrl)
+@Injectable(as: _APIRepository)
+@RestApi()
 abstract class APIRepository {
-  factory APIRepository(Dio dio, {String baseUrl}) = _APIRepository;
+  @factoryMethod
+  factory APIRepository(Dio dio, {@Named('BaseUrl') String baseUrl}) = _APIRepository;
 
   @GET('/popular')
   Future<List<Popular>> getPopularTorrents();
