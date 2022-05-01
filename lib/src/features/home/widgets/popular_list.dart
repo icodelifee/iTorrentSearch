@@ -14,7 +14,7 @@ import '../../../presentation/widgets/frosted_glass.dart';
 import '../../../presentation/widgets/grid_loading_shimmer.dart';
 import '../../../presentation/widgets/listview_fade.dart';
 import '../../../utils/extensions/to_poster_url.dart';
-import '../../popularinfopage/popular_info_page.dart';
+import '../../popular_info/popular_info_page.dart';
 import '../providers/popular_provider.dart';
 
 class PopularList extends ConsumerStatefulWidget {
@@ -75,7 +75,6 @@ class _PopularListState extends ConsumerState<PopularList> {
                             child: CachedNetworkImage(
                               imageUrl: data[index].posterPath.toPosterUrl,
                               placeholder: (context, url) => const GlassContainer(),
-                              // ignore: avoid_annotating_with_dynamic
                               errorWidget: (context, url, dynamic _) => const Icon(Icons.error),
                               fit: BoxFit.cover,
                             ),
