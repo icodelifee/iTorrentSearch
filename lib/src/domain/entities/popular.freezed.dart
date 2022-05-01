@@ -12,52 +12,11 @@ part of 'popular.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Popular _$PopularFromJson(Map<String, dynamic> json) {
   return _Popular.fromJson(json);
 }
-
-/// @nodoc
-class _$PopularTearOff {
-  const _$PopularTearOff();
-
-  _Popular call(
-      {@JsonKey(name: 'backdrop_path') required String backdropPath,
-      required List<String> genres,
-      required int id,
-      required String overview,
-      required double popularity,
-      @JsonKey(name: 'poster_path') required String posterPath,
-      @JsonKey(name: 'release_date') required DateTime releaseDate,
-      required int runtime,
-      required String tagline,
-      required String title,
-      @JsonKey(name: 'imdb_id') required String imdbId,
-      @JsonKey(name: 'vote_average') required double voteAverage}) {
-    return _Popular(
-      backdropPath: backdropPath,
-      genres: genres,
-      id: id,
-      overview: overview,
-      popularity: popularity,
-      posterPath: posterPath,
-      releaseDate: releaseDate,
-      runtime: runtime,
-      tagline: tagline,
-      title: title,
-      imdbId: imdbId,
-      voteAverage: voteAverage,
-    );
-  }
-
-  Popular fromJson(Map<String, Object?> json) {
-    return Popular.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Popular = _$PopularTearOff();
 
 /// @nodoc
 mixin _$Popular {
@@ -86,7 +45,8 @@ mixin _$Popular {
 
 /// @nodoc
 abstract class $PopularCopyWith<$Res> {
-  factory $PopularCopyWith(Popular value, $Res Function(Popular) then) = _$PopularCopyWithImpl<$Res>;
+  factory $PopularCopyWith(Popular value, $Res Function(Popular) then) =
+      _$PopularCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'backdrop_path') String backdropPath,
       List<String> genres,
@@ -180,7 +140,8 @@ class _$PopularCopyWithImpl<$Res> implements $PopularCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$PopularCopyWith<$Res> implements $PopularCopyWith<$Res> {
-  factory _$PopularCopyWith(_Popular value, $Res Function(_Popular) then) = __$PopularCopyWithImpl<$Res>;
+  factory _$PopularCopyWith(_Popular value, $Res Function(_Popular) then) =
+      __$PopularCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'backdrop_path') String backdropPath,
@@ -198,8 +159,10 @@ abstract class _$PopularCopyWith<$Res> implements $PopularCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$PopularCopyWithImpl<$Res> extends _$PopularCopyWithImpl<$Res> implements _$PopularCopyWith<$Res> {
-  __$PopularCopyWithImpl(_Popular _value, $Res Function(_Popular) _then) : super(_value, (v) => _then(v as _Popular));
+class __$PopularCopyWithImpl<$Res> extends _$PopularCopyWithImpl<$Res>
+    implements _$PopularCopyWith<$Res> {
+  __$PopularCopyWithImpl(_Popular _value, $Res Function(_Popular) _then)
+      : super(_value, (v) => _then(v as _Popular));
 
   @override
   _Popular get _value => super._value as _Popular;
@@ -277,7 +240,7 @@ class __$PopularCopyWithImpl<$Res> extends _$PopularCopyWithImpl<$Res> implement
 class _$_Popular implements _Popular {
   const _$_Popular(
       {@JsonKey(name: 'backdrop_path') required this.backdropPath,
-      required this.genres,
+      required final List<String> genres,
       required this.id,
       required this.overview,
       required this.popularity,
@@ -287,15 +250,22 @@ class _$_Popular implements _Popular {
       required this.tagline,
       required this.title,
       @JsonKey(name: 'imdb_id') required this.imdbId,
-      @JsonKey(name: 'vote_average') required this.voteAverage});
+      @JsonKey(name: 'vote_average') required this.voteAverage})
+      : _genres = genres;
 
-  factory _$_Popular.fromJson(Map<String, dynamic> json) => _$$_PopularFromJson(json);
+  factory _$_Popular.fromJson(Map<String, dynamic> json) =>
+      _$$_PopularFromJson(json);
 
   @override
   @JsonKey(name: 'backdrop_path')
   final String backdropPath;
+  final List<String> _genres;
   @override
-  final List<String> genres;
+  List<String> get genres {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_genres);
+  }
+
   @override
   final int id;
   @override
@@ -331,20 +301,26 @@ class _$_Popular implements _Popular {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Popular &&
-            const DeepCollectionEquality().equals(other.backdropPath, backdropPath) &&
+            const DeepCollectionEquality()
+                .equals(other.backdropPath, backdropPath) &&
             const DeepCollectionEquality().equals(other.genres, genres) &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality().equals(other.popularity, popularity) &&
-            const DeepCollectionEquality().equals(other.posterPath, posterPath) &&
-            const DeepCollectionEquality().equals(other.releaseDate, releaseDate) &&
+            const DeepCollectionEquality()
+                .equals(other.popularity, popularity) &&
+            const DeepCollectionEquality()
+                .equals(other.posterPath, posterPath) &&
+            const DeepCollectionEquality()
+                .equals(other.releaseDate, releaseDate) &&
             const DeepCollectionEquality().equals(other.runtime, runtime) &&
             const DeepCollectionEquality().equals(other.tagline, tagline) &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.imdbId, imdbId) &&
-            const DeepCollectionEquality().equals(other.voteAverage, voteAverage));
+            const DeepCollectionEquality()
+                .equals(other.voteAverage, voteAverage));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -363,7 +339,8 @@ class _$_Popular implements _Popular {
 
   @JsonKey(ignore: true)
   @override
-  _$PopularCopyWith<_Popular> get copyWith => __$PopularCopyWithImpl<_Popular>(this, _$identity);
+  _$PopularCopyWith<_Popular> get copyWith =>
+      __$PopularCopyWithImpl<_Popular>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -373,51 +350,53 @@ class _$_Popular implements _Popular {
 
 abstract class _Popular implements Popular {
   const factory _Popular(
-      {@JsonKey(name: 'backdrop_path') required String backdropPath,
-      required List<String> genres,
-      required int id,
-      required String overview,
-      required double popularity,
-      @JsonKey(name: 'poster_path') required String posterPath,
-      @JsonKey(name: 'release_date') required DateTime releaseDate,
-      required int runtime,
-      required String tagline,
-      required String title,
-      @JsonKey(name: 'imdb_id') required String imdbId,
-      @JsonKey(name: 'vote_average') required double voteAverage}) = _$_Popular;
+          {@JsonKey(name: 'backdrop_path') required final String backdropPath,
+          required final List<String> genres,
+          required final int id,
+          required final String overview,
+          required final double popularity,
+          @JsonKey(name: 'poster_path') required final String posterPath,
+          @JsonKey(name: 'release_date') required final DateTime releaseDate,
+          required final int runtime,
+          required final String tagline,
+          required final String title,
+          @JsonKey(name: 'imdb_id') required final String imdbId,
+          @JsonKey(name: 'vote_average') required final double voteAverage}) =
+      _$_Popular;
 
   factory _Popular.fromJson(Map<String, dynamic> json) = _$_Popular.fromJson;
 
   @override
   @JsonKey(name: 'backdrop_path')
-  String get backdropPath;
+  String get backdropPath => throw _privateConstructorUsedError;
   @override
-  List<String> get genres;
+  List<String> get genres => throw _privateConstructorUsedError;
   @override
-  int get id;
+  int get id => throw _privateConstructorUsedError;
   @override
-  String get overview;
+  String get overview => throw _privateConstructorUsedError;
   @override
-  double get popularity;
+  double get popularity => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'poster_path')
-  String get posterPath;
+  String get posterPath => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'release_date')
-  DateTime get releaseDate;
+  DateTime get releaseDate => throw _privateConstructorUsedError;
   @override
-  int get runtime;
+  int get runtime => throw _privateConstructorUsedError;
   @override
-  String get tagline;
+  String get tagline => throw _privateConstructorUsedError;
   @override
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'imdb_id')
-  String get imdbId;
+  String get imdbId => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'vote_average')
-  double get voteAverage;
+  double get voteAverage => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PopularCopyWith<_Popular> get copyWith => throw _privateConstructorUsedError;
+  _$PopularCopyWith<_Popular> get copyWith =>
+      throw _privateConstructorUsedError;
 }

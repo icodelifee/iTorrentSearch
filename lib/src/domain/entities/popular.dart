@@ -3,7 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'popular.freezed.dart';
 part 'popular.g.dart';
 
-@JsonSerializable()
 @freezed
 class Popular with _$Popular {
   const factory Popular({
@@ -21,5 +20,5 @@ class Popular with _$Popular {
     @JsonKey(name: 'vote_average') required final double voteAverage,
   }) = _Popular;
 
-  factory Popular.fromJson(Map<String, dynamic> json) => _$PopularFromJson(json);
+  factory Popular.fromJson(Map<String, Object?> json) => _$PopularFromJson(json);
 }

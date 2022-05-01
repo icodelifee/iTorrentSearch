@@ -12,42 +12,11 @@ part of 'torrent.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Torrent _$TorrentFromJson(Map<String, dynamic> json) {
   return _Torrent.fromJson(json);
 }
-
-/// @nodoc
-class _$TorrentTearOff {
-  const _$TorrentTearOff();
-
-  _Torrent call(
-      {required String title,
-      required String seeds,
-      required String leechs,
-      required String size,
-      required String added,
-      required String link,
-      required String magnet}) {
-    return _Torrent(
-      title: title,
-      seeds: seeds,
-      leechs: leechs,
-      size: size,
-      added: added,
-      link: link,
-      magnet: magnet,
-    );
-  }
-
-  Torrent fromJson(Map<String, Object?> json) {
-    return Torrent.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Torrent = _$TorrentTearOff();
 
 /// @nodoc
 mixin _$Torrent {
@@ -66,8 +35,16 @@ mixin _$Torrent {
 
 /// @nodoc
 abstract class $TorrentCopyWith<$Res> {
-  factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) = _$TorrentCopyWithImpl<$Res>;
-  $Res call({String title, String seeds, String leechs, String size, String added, String link, String magnet});
+  factory $TorrentCopyWith(Torrent value, $Res Function(Torrent) then) =
+      _$TorrentCopyWithImpl<$Res>;
+  $Res call(
+      {String title,
+      String seeds,
+      String leechs,
+      String size,
+      String added,
+      String link,
+      String magnet});
 }
 
 /// @nodoc
@@ -123,14 +100,24 @@ class _$TorrentCopyWithImpl<$Res> implements $TorrentCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$TorrentCopyWith<$Res> implements $TorrentCopyWith<$Res> {
-  factory _$TorrentCopyWith(_Torrent value, $Res Function(_Torrent) then) = __$TorrentCopyWithImpl<$Res>;
+  factory _$TorrentCopyWith(_Torrent value, $Res Function(_Torrent) then) =
+      __$TorrentCopyWithImpl<$Res>;
   @override
-  $Res call({String title, String seeds, String leechs, String size, String added, String link, String magnet});
+  $Res call(
+      {String title,
+      String seeds,
+      String leechs,
+      String size,
+      String added,
+      String link,
+      String magnet});
 }
 
 /// @nodoc
-class __$TorrentCopyWithImpl<$Res> extends _$TorrentCopyWithImpl<$Res> implements _$TorrentCopyWith<$Res> {
-  __$TorrentCopyWithImpl(_Torrent _value, $Res Function(_Torrent) _then) : super(_value, (v) => _then(v as _Torrent));
+class __$TorrentCopyWithImpl<$Res> extends _$TorrentCopyWithImpl<$Res>
+    implements _$TorrentCopyWith<$Res> {
+  __$TorrentCopyWithImpl(_Torrent _value, $Res Function(_Torrent) _then)
+      : super(_value, (v) => _then(v as _Torrent));
 
   @override
   _Torrent get _value => super._value as _Torrent;
@@ -190,7 +177,8 @@ class _$_Torrent implements _Torrent {
       required this.link,
       required this.magnet});
 
-  factory _$_Torrent.fromJson(Map<String, dynamic> json) => _$$_TorrentFromJson(json);
+  factory _$_Torrent.fromJson(Map<String, dynamic> json) =>
+      _$$_TorrentFromJson(json);
 
   @override
   final String title;
@@ -226,6 +214,7 @@ class _$_Torrent implements _Torrent {
             const DeepCollectionEquality().equals(other.magnet, magnet));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -239,7 +228,8 @@ class _$_Torrent implements _Torrent {
 
   @JsonKey(ignore: true)
   @override
-  _$TorrentCopyWith<_Torrent> get copyWith => __$TorrentCopyWithImpl<_Torrent>(this, _$identity);
+  _$TorrentCopyWith<_Torrent> get copyWith =>
+      __$TorrentCopyWithImpl<_Torrent>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -249,31 +239,32 @@ class _$_Torrent implements _Torrent {
 
 abstract class _Torrent implements Torrent {
   const factory _Torrent(
-      {required String title,
-      required String seeds,
-      required String leechs,
-      required String size,
-      required String added,
-      required String link,
-      required String magnet}) = _$_Torrent;
+      {required final String title,
+      required final String seeds,
+      required final String leechs,
+      required final String size,
+      required final String added,
+      required final String link,
+      required final String magnet}) = _$_Torrent;
 
   factory _Torrent.fromJson(Map<String, dynamic> json) = _$_Torrent.fromJson;
 
   @override
-  String get title;
+  String get title => throw _privateConstructorUsedError;
   @override
-  String get seeds;
+  String get seeds => throw _privateConstructorUsedError;
   @override
-  String get leechs;
+  String get leechs => throw _privateConstructorUsedError;
   @override
-  String get size;
+  String get size => throw _privateConstructorUsedError;
   @override
-  String get added;
+  String get added => throw _privateConstructorUsedError;
   @override
-  String get link;
+  String get link => throw _privateConstructorUsedError;
   @override
-  String get magnet;
+  String get magnet => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TorrentCopyWith<_Torrent> get copyWith => throw _privateConstructorUsedError;
+  _$TorrentCopyWith<_Torrent> get copyWith =>
+      throw _privateConstructorUsedError;
 }
