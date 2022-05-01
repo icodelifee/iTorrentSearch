@@ -6,14 +6,9 @@ import '../gen/fonts.gen.dart';
 import 'config/colors.dart';
 import 'features/home/screens/homepage.dart';
 
-class App extends StatefulWidget {
+class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
 
-  @override
-  _AppState createState() => _AppState();
-}
-
-class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
