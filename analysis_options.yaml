@@ -3,19 +3,22 @@ include: package:fleasy/analysis_options.yaml
 analyzer:
   exclude:
     - "**/*.config.dart"
+  errors:
+    invalid_annotation_target: ignore
 
 dart_code_metrics:
   exclude:
     - "**/*.config.dart"
-#   errors:
-#     invalid_annotation_target: ignore
+  errors:
+    invalid_annotation_target: ignore
   
 #   language:
 #     strict-raw-types: false
 
-# linter:
-#   rules:
-#     sort_pub_dependencies: false
+linter:
+  rules:
+    avoid_dynamic: false
+    implicit_dynamic_parameter: false
 #     prefer_interpolation_to_compose_strings: true
 #     prefer_relative_imports: true
 #     avoid_dynamic_calls: true
