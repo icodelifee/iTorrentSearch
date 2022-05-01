@@ -9,6 +9,20 @@ import 'package:flutter/material.dart';
 ///It Inherit properties of [Container] so expect layout effect as container,
 ///while tinkering with height and width
 class GlassContainer extends StatelessWidget {
+  const GlassContainer({
+    Key? key,
+    this.opacity = 0.05,
+    this.child,
+    this.blur = 15,
+    this.border,
+    this.height,
+    this.width,
+    this.borderRadius,
+    this.margin,
+    this.padding,
+    this.shadowStrength = 4,
+  }) : super(key: key);
+
   ///```
   ///opacity is used to control the glass frosted effect
   ///
@@ -72,20 +86,6 @@ class GlassContainer extends StatelessWidget {
   ///```
   final BoxBorder? border;
 
-  const GlassContainer({
-    Key? key,
-    this.opacity = 0.05,
-    this.child,
-    this.blur = 15,
-    this.border,
-    this.height,
-    this.width,
-    this.borderRadius,
-    this.margin,
-    this.padding,
-    this.shadowStrength = 4,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -105,7 +105,7 @@ class GlassContainer extends StatelessWidget {
           ),
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: borderRadius ?? BorderRadius.circular(10),
+              borderRadius: borderRadius ?? const BorderRadius.all(Radius.circular(10)),
               color: Colors.grey[100]!.withOpacity(opacity),
             ),
             child: child,

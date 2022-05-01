@@ -23,6 +23,7 @@ dependencies:
   flutter_shimmer: ^2.1.2
   flutter_staggered_animations: ^1.0.0
   flutter_typeahead: ^3.2.1
+  freezed: ^2.0.2
   freezed_annotation: null
   get_it: ^7.2.0
   go_router: ^2.1.1
@@ -30,6 +31,7 @@ dependencies:
   in_app_purchase: ^1.0.9
   injectable: ^1.5.3
   intl: null
+  json_annotation: ^4.5.0
   lazy_loading_list: ^1.0.0+1
   logger: any
   one_context: ^1.1.1

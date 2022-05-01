@@ -6,7 +6,6 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../config/colors.dart';
 import '../../../config/font_weight.dart';
-import '../../../domain/entities/torrent.dart';
 import '../../../domain/enums/search_provider.dart';
 import '../../../presentation/widgets/default_progress_indicator.dart';
 import '../../../presentation/widgets/listview_fade.dart';
@@ -32,12 +31,8 @@ class _SearchListState extends ConsumerState<SearchList> {
       initial: () => empty,
       loading: () => const DefaultProgressIndicator.center(),
       data: (data) {
-        // TODO: this is fucking stupid, due to false positive "as" casting to Torrent
-        // for some reason typedef does not promote the entity type.
-        final torrents = Map<SearchProvider, List<Torrent>>.from(data);
-
         return DefaultTabController(
-          length: 3,
+          length: 2,
           child: Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.transparent,
@@ -72,27 +67,31 @@ class _SearchListState extends ConsumerState<SearchList> {
                 ),
               ),
             ),
-            body: TabBarView(
-              children: [
-                for (final provider in SearchProvider.values)
-                  ListViewFadeWidget(
-                    child: ListView.builder(
-                      shrinkWrap: true,
-                      padding: const EdgeInsets.all(20),
-                      itemCount: data[provider]!.length,
-                      itemBuilder: (context, index) => AnimationConfiguration.staggeredList(
-                        position: index,
-                        duration: 200.milliseconds,
-                        child: SlideAnimation(
-                          verticalOffset: 50.0,
-                          child: FadeInAnimation(
-                            child: TorrentInfoTile(torrent: torrents[provider]![index]),
+            body: ScrollConfiguration(
+              behavior: const ScrollBehavior().copyWith(overscroll: false),
+              child: TabBarView(
+                physics: const ClampingScrollPhysics(),
+                children: [
+                  for (final provider in SearchProvider.values)
+                    ListViewFadeWidget(
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        padding: const EdgeInsets.all(20),
+                        itemCount: data[provider]!.length,
+                        itemBuilder: (context, index) => AnimationConfiguration.staggeredList(
+                          position: index,
+                          duration: 200.milliseconds,
+                          child: SlideAnimation(
+                            verticalOffset: 50.0,
+                            child: FadeInAnimation(
+                              child: TorrentInfoTile(torrent: data[provider]![index]),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-              ],
+                ],
+              ),
             ),
           ),
         );

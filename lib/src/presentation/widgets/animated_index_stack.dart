@@ -82,7 +82,7 @@ class _AnimatedIndexedStackState extends State<AnimatedIndexedStack> with Animat
 
   @override
   Widget build(BuildContext context) {
-    Offset _offset = exiting ? outOffset.value : inOffset.value;
+    var _offset = exiting ? outOffset.value : inOffset.value;
     _offset *= widget.reverse ? -1 : 1;
 
     return Transform.translate(
