@@ -36,74 +36,69 @@ class _PopularInfoPageState extends ConsumerState<PopularInfoPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        extendBody: true,
-        extendBodyBehindAppBar: true,
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.transparent,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios_new_rounded),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
-          systemOverlayStyle: const SystemUiOverlayStyle(
-            statusBarColor: Colors.red,
-            statusBarIconBrightness: Brightness.dark,
-            statusBarBrightness: Brightness.light,
-          ),
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
+          onPressed: () => Navigator.of(context).pop(),
         ),
-        body: Stack(
-          children: [
-            PopularInfoBackdropImage(posterPath: widget.popular.posterPath),
-            ScrollConfiguration(
-              behavior: const ScrollBehavior().copyWith(overscroll: false),
-              child: ListView(
-                shrinkWrap: true,
-                children: AnimationConfiguration.toStaggeredList(
-                  duration: const Duration(milliseconds: 375),
-                  childAnimationBuilder: (widget) => SlideAnimation(
-                    verticalOffset: 100,
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+        ),
+      ),
+      body: Stack(
+        children: [
+          PopularInfoBackdropImage(posterPath: widget.popular.posterPath),
+          ScrollConfiguration(
+            behavior: const ScrollBehavior().copyWith(overscroll: false),
+            child: ListView(
+              shrinkWrap: true,
+              children: AnimationConfiguration.toStaggeredList(
+                duration: const Duration(milliseconds: 375),
+                childAnimationBuilder: (widget) => SlideAnimation(
+                  verticalOffset: 100,
+                  curve: Curves.easeInOutCubic,
+                  child: FadeInAnimation(
                     curve: Curves.easeInOutCubic,
-                    child: FadeInAnimation(
-                      curve: Curves.easeInOutCubic,
-                      child: widget,
+                    child: widget,
+                  ),
+                ),
+                children: [
+                  Center(
+                    child: PopularInfoPosterImage(
+                      imageUrl: widget.popular.posterPath,
+                      placeHolder: const GlassContainer(width: 200, height: 300),
+                      width: 200,
                     ),
                   ),
-                  children: [
-                    Center(
-                      child: PopularInfoPosterImage(
-                        imageUrl: widget.popular.posterPath,
-                        placeHolder: const GlassContainer(width: 200, height: 300),
-                        width: 200,
-                      ),
+                  sizedH32,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                    child: Text(
+                      widget.popular.title,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(fontSize: 24, fontWeight: semiBold),
                     ),
-                    sizedH32,
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 18),
-                      child: Text(
-                        widget.popular.title,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(fontSize: 24, fontWeight: semiBold),
-                      ),
-                    ),
-                    sizedH20,
-                    MediaInfoWidget(popular: widget.popular),
-                    sizedH20,
-                    RatingWidget(rating: widget.popular.voteAverage),
-                    sizedH20,
-                    OverviewWidget(overview: widget.popular.overview),
-                    const SizedBox(height: 120),
-                  ],
-                ),
+                  ),
+                  sizedH20,
+                  MediaInfoWidget(popular: widget.popular),
+                  sizedH20,
+                  RatingWidget(rating: widget.popular.voteAverage),
+                  sizedH20,
+                  OverviewWidget(overview: widget.popular.overview),
+                  const SizedBox(height: 120),
+                ],
               ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: _ShowTorrentButton(popular: widget.popular),
-            ),
-          ],
-        ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: _ShowTorrentButton(popular: widget.popular),
+          ),
+        ],
       ),
     );
   }
