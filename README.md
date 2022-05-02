@@ -1,16 +1,23 @@
-# itorrentsearch
+# iTorrent Search
+![itor (1)](https://user-images.githubusercontent.com/18023153/166229478-26081eb8-1141-45d3-9d9a-ab436a9e7692.png)
 
-Refactoring in process
+## Build Setup
+``` bash
 
-## Getting Started
+# install dependencies
+$ flutter pub get
 
-This project is a starting point for a Flutter application.
+# run debug mode
+$ flutter run
 
-A few resources to get you started if this is your first Flutter project:
+# run release mode
+$ flutter run --release
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# build app bundle
+$ flutter build appbundle
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# build apk
+$ flutter build apk
+
+```
+For detailed explanation on how things work, check out [Flutter docs](https://flutter.dev/docs).
