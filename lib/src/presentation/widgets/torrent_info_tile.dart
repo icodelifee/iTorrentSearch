@@ -61,7 +61,7 @@ class _TorrentInfoTileState extends State<TorrentInfoTile> {
                     ),
                     secondChild: const Chip(
                       avatar: Icon(Icons.link),
-                      label: Text('Magnet Copied to Clipboard'),
+                      label: Text('Magnet copied to clipboard'),
                     ),
                     crossFadeState: isCopied ? CrossFadeState.showSecond : CrossFadeState.showFirst,
                     duration: 200.milliseconds,
