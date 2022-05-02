@@ -28,6 +28,7 @@ class _PopularListState extends ConsumerState<PopularList> {
   @override
   void initState() {
     super.initState();
+    // subjected to change how i handling states
     ref.read(popularStateProvider.notifier).fetchPopular();
   }
 

@@ -10,6 +10,7 @@ final popularStateProvider = StateNotifierProvider<PopularNotifier, PopularState
 
 class PopularNotifier extends StateNotifier<PopularState> {
   PopularNotifier() : super(const PopularState.initial());
+  // subjected to change how im handling states
 
   Future<void> fetchPopular({bool refresh = false}) async {
     if (refresh || !state.isData) {

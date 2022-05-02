@@ -18,7 +18,7 @@ class SearchNotifier extends StateNotifier<SearchState> {
 
   Future<void> searchTorrents({required String? query}) async {
     state = const SearchState.loading();
-
+    // subjected to change how im handling states
     // ignore: omit_local_variable_types
     final SearchResult searchR = {};
     final q = query?.trim();
