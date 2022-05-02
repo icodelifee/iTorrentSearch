@@ -53,6 +53,7 @@ class _PopularListState extends ConsumerState<PopularList> {
           child: ListViewFadeWidget(
             child: AnimationLimiter(
               child: GridView.builder(
+                padding: const EdgeInsets.only(top: 10, bottom: 15),
                 physics: const BouncingScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -72,6 +73,7 @@ class _PopularListState extends ConsumerState<PopularList> {
                         child: ClipRRect(
                           borderRadius: const BorderRadius.all(Radius.circular(10)),
                           child: InkWell(
+                            borderRadius: const BorderRadius.all(Radius.circular(10)),
                             onTap: () => _navigateToPopular(data[index]),
                             child: CachedNetworkImage(
                               imageUrl: data[index].posterPath.toPosterUrl,
