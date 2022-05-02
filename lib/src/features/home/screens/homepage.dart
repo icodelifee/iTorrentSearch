@@ -38,7 +38,7 @@ class HomePage extends HookConsumerWidget {
                     child: PopularList(),
                   ),
                   const SearchList(),
-                ].elementAt(isSearch ? 1 : 0),
+                ][(isSearch ? 1 : 0)],
               ),
             ),
           ],
