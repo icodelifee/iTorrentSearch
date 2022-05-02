@@ -47,4 +47,4 @@ app.*.map.json
 /android/app/build
 
 
-/lib/app/legacy
+/lib/src/legacy
