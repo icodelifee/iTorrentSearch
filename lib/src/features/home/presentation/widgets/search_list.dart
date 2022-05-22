@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../../config/colors.dart';
-import '../../../config/font_weight.dart';
-import '../../../domain/enums/search_provider.dart';
-import '../../../presentation/widgets/default_progress_indicator.dart';
-import '../../../presentation/widgets/listview_fade.dart';
-import '../../../presentation/widgets/reuseables.dart';
-import '../../../presentation/widgets/torrent_info_tile.dart';
-import '../providers/search_provider.dart';
+import '../../../../config/colors.dart';
+import '../../../../config/font_weight.dart';
+import '../../../../domain/enums/search_provider.dart';
+import '../../../../presentation/widgets/default_progress_indicator.dart';
+import '../../../../presentation/widgets/listview_fade.dart';
+import '../../../../presentation/widgets/reuseables.dart';
+import '../../../../presentation/widgets/torrent_info_tile.dart';
+import '../../providers/search_provider.dart';
 
 class SearchList extends StatefulHookConsumerWidget {
   const SearchList({

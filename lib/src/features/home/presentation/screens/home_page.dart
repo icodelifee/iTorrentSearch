@@ -2,7 +2,7 @@ import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../../presentation/widgets/reuseables.dart';
+import '../../../../presentation/widgets/reuseables.dart';
 import '../widgets/dummy_appbar.dart';
 import '../widgets/header_elements.dart';
 import '../widgets/popular_list.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../../../gen/assets.gen.dart';
+import '../../../../../gen/assets.gen.dart';
 import 'dummy_appbar.dart';
 
 class HeaderElements extends HookConsumerWidget {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../../../gen/assets.gen.dart';
-import '../../../config/colors.dart';
-import '../../../config/font_weight.dart';
-import '../../../presentation/widgets/frosted_glass.dart';
-import '../providers/search_provider.dart';
+import '../../../../../gen/assets.gen.dart';
+import '../../../../config/colors.dart';
+import '../../../../config/font_weight.dart';
+import '../../../../presentation/widgets/frosted_glass.dart';
+import '../../providers/search_provider.dart';
 
 final searchTextProvider = StateProvider<String?>((ref) => null);
 

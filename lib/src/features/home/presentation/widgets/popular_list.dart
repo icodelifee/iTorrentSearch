@@ -7,15 +7,15 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:one_context/one_context.dart';
 
-import '../../../../di.dart';
-import '../../../config/colors.dart';
-import '../../../domain/entities/popular.dart';
-import '../../../presentation/widgets/frosted_glass.dart';
-import '../../../presentation/widgets/grid_loading_shimmer.dart';
-import '../../../presentation/widgets/listview_fade.dart';
-import '../../../utils/extensions/to_poster_url.dart';
-import '../../popular_info/popular_info_page.dart';
-import '../providers/popular_provider.dart';
+import '../../../../../di.dart';
+import '../../../../config/colors.dart';
+import '../../../../domain/entities/popular.dart';
+import '../../../../presentation/widgets/frosted_glass.dart';
+import '../../../../presentation/widgets/grid_loading_shimmer.dart';
+import '../../../../presentation/widgets/listview_fade.dart';
+import '../../../../utils/extensions/to_poster_url.dart';
+import '../../../popular_info/popular_info_page.dart';
+import '../../providers/popular_provider.dart';
 
 class PopularList extends ConsumerStatefulWidget {
   const PopularList({Key? key}) : super(key: key);
