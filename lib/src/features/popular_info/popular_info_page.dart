@@ -29,7 +29,7 @@ class _PopularInfoPageState extends ConsumerState<PopularInfoPage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(currentImdbIdProvider.state).state = widget.popular.imdbId;
     });
   }

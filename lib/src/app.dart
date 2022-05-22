@@ -4,7 +4,7 @@ import 'package:one_context/one_context.dart';
 import '../di.dart';
 import '../gen/fonts.gen.dart';
 import 'config/colors.dart';
-import 'features/home/screens/homepage.dart';
+import 'legacy/screens/homepage/homepage.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -14,6 +14,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'iTorrent Search',
       theme: ThemeData(
+        useMaterial3: true,
         primaryColor: CColors.mainColor,
         brightness: Brightness.dark,
         floatingActionButtonTheme: const FloatingActionButtonThemeData(

@@ -37,7 +37,7 @@ class _PopularTorrentsListState extends ConsumerState<PopularTorrentsList> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(popularTorrentsStateProvider.notifier).fetch(imdbId: widget.imdbId);
     });
   }
