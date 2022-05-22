@@ -1,15 +1,13 @@
+// 🎯 Dart imports:
+
 class Constants {
   Constants._internal();
   factory Constants() => _instance;
   static final Constants _instance = Constants._internal();
 
   static const String appTitle = 'iTorrent Search';
-  static const bool noAds = false;
   static const String chatUrl = 'https://t.me/itorrentsupportchat';
   static const String psUrl = 'https://play.google.com/store/apps/details?id=com.icodelife.itorrentsearch';
-  static const String apiUrl = '';
-  static const String itapiUrl = '';
-  static const String auth = '';
 
   static const clients = <String>[
     'com.utorrent.client',
