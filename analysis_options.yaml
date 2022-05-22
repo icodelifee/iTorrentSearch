@@ -5,6 +5,8 @@ analyzer:
     - "**/*.config.dart"
   errors:
     invalid_annotation_target: ignore
+  language:
+    strict-raw-types: false
 
 dart_code_metrics:
   exclude:
@@ -12,13 +14,12 @@ dart_code_metrics:
   errors:
     invalid_annotation_target: ignore
   
-#   language:
-#     strict-raw-types: false
 
 linter:
   rules:
-    avoid_dynamic: false
-    implicit_dynamic_parameter: false
+    - avoid_dynamic: false
+    - implicit_dynamic_parameter: false
+    - use_super_parameters: true
 #     prefer_interpolation_to_compose_strings: true
 #     prefer_relative_imports: true
 #     avoid_dynamic_calls: true

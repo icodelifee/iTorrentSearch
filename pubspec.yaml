@@ -4,7 +4,7 @@ description: A new Flutter project.
 version: 5.0.0+308
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   android_intent: ^2.0.2
