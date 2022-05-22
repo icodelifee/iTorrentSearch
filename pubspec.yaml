@@ -17,6 +17,7 @@ dependencies:
   fleasy: ^0.13.0
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.0.2
   flutter_hooks: ^0.18.0
   flutter_mobx: ^2.0.4
   flutter_rating_stars: ^1.0.3+4
