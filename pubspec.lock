@@ -493,7 +493,7 @@ packages:
     source: hosted
     version: "10.1.0"
   freezed:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: freezed
       url: "https://pub.dartlang.org"
